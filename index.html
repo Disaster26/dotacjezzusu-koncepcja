@@ -187,6 +187,35 @@ border:3px solid var(--z);border-left:0;background:linear-gradient(var(--z),var(
 .liczby dd{margin:10px 0 0;color:#B8C4BE;font-size:15.5px;max-width:22em}
 @media (max-width:899px){.liczby dl{grid-template-columns:1fr 1fr}}
 @media (max-width:420px){.liczby dl{gap:24px 18px}.liczby dd{font-size:14.5px}}
+/* liczby - treść klienta */
+.liczby .wstep{font-size:clamp(17px,1.5vw,20px);color:#D6E3DC;max-width:52em;line-height:1.6}
+.liczby h2{color:#fff;margin:clamp(32px,4vw,48px) 0 clamp(26px,3vw,36px)}
+.liczby dl{grid-template-columns:repeat(6,minmax(0,1fr))}
+.liczby dl>div{grid-column:span 2}
+.liczby dl>div.duza{grid-column:span 3}
+.liczby dd b{color:#fff;font-weight:600}
+@media (max-width:899px){.liczby dl{grid-template-columns:1fr 1fr}.liczby dl>div,.liczby dl>div.duza{grid-column:auto}.liczby dl>div:last-child{grid-column:1/-1}}
+/* nabór */
+.nabor{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:28px 80px;align-items:start}
+.nabor .tresc p{color:var(--t2);font-size:18px}
+.nabor .tresc p+p{margin-top:16px}
+.fakt-z{background:#EAF6EF;border-left:3px solid var(--z)}
+@media (max-width:899px){.nabor{grid-template-columns:1fr}}
+/* dlaczego */
+.powody{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.powody article{padding:28px 26px 30px;background:var(--sz);border-top:3px solid var(--z)}
+.powody h3{margin-bottom:12px}
+.powody p{color:var(--t2);font-size:16.5px}
+@media (max-width:899px){.powody{grid-template-columns:1fr;gap:18px}}
+.etapy{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:48px}
+.etapy li:nth-child(3n)::before{right:0}
+@media (max-width:999px){.etapy{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.etapy{grid-template-columns:1fr}}
+.punkty li b{color:#fff}
+.odpl .gwarancja{--rk:#4CC488;--o:14px;margin:14px;max-width:480px;padding:30px 28px;background:rgba(255,255,255,.04)}
+.odpl .gwarancja h3{color:#fff;margin-bottom:14px}
+.odpl .gwarancja p{color:#D6E9DF;font-size:16.5px}
+@media (max-width:899px){.odpl .gwarancja{width:calc(100% - 28px);max-width:none}}
 section[id]{scroll-margin-top:72px}
 </style>
 </head>
@@ -196,6 +225,7 @@ section[id]{scroll-margin-top:72px}
  <div class="wr">
   <a class="logo" href="./" aria-label="Energia BHP - strona główna"><svg viewBox="9 31 205 46" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Energia BHP"><g fill="#1e8b57"><g transform="translate(11.63, 66.74)"><g><path d="M 13.84 -21.46 L 13.84 -17.18 L 6.45 -17.18 L 6.45 -12.90 L 13.53 -12.90 L 13.53 -8.60 L 6.45 -8.60 L 6.45 -4.29 L 13.84 -4.29 L 13.84 0 L 1.56 0 L 1.56 -21.46 Z M 13.84 -21.46 "/></g></g></g><g fill="#1e8b57"><g transform="translate(29.33, 66.74)"><g><path d="M 6.45 -13.32 L 6.45 0 L 1.56 0 L 1.56 -21.46 L 6.45 -21.46 L 15 -8.14 L 15.04 -8.14 L 15.04 -21.46 L 19.93 -21.46 L 19.93 0 L 15.04 0 L 6.51 -13.32 Z M 6.45 -13.32 "/></g></g></g><g fill="#1e8b57"><g transform="translate(53.43, 66.74)"><g><path d="M 13.84 -21.46 L 13.84 -17.18 L 6.45 -17.18 L 6.45 -12.90 L 13.53 -12.90 L 13.53 -8.60 L 6.45 -8.60 L 6.45 -4.29 L 13.84 -4.29 L 13.84 0 L 1.56 0 L 1.56 -21.46 Z M 13.84 -21.46 "/></g></g></g><g fill="#1e8b57"><g transform="translate(71.13, 66.74)"><g><path d="M 1.56 -21.46 L 9.23 -21.46 C 11.30 -21.46 12.99 -20.91 14.29 -19.81 C 15.59 -18.71 16.25 -17.14 16.25 -15.09 C 16.25 -13.51 15.85 -12.19 15.06 -11.12 C 14.26 -10.06 13.19 -9.31 11.84 -8.87 L 19.23 0 L 13.01 0 L 6.45 -8.48 L 6.45 0 L 1.56 0 Z M 6.45 -11.95 L 7.03 -11.95 C 7.47 -11.95 7.85 -11.95 8.17 -11.96 C 8.48 -11.98 8.83 -12.05 9.23 -12.15 C 9.64 -12.25 9.96 -12.40 10.20 -12.59 C 10.44 -12.78 10.64 -13.07 10.82 -13.43 C 11.00 -13.80 11.09 -14.24 11.09 -14.76 C 11.09 -15.28 11.00 -15.72 10.82 -16.09 C 10.64 -16.45 10.44 -16.73 10.20 -16.92 C 9.96 -17.10 9.64 -17.25 9.23 -17.35 C 8.83 -17.46 8.48 -17.52 8.17 -17.54 C 7.85 -17.56 7.47 -17.57 7.03 -17.57 L 6.45 -17.57 Z M 6.45 -11.95 "/></g></g></g><g fill="#1e8b57"><g transform="translate(92.36, 66.74)"><g><path d="M 20.98 -12.03 L 20.98 -7.35 C 20.42 -4.81 19.20 -2.89 17.32 -1.57 C 15.46 -0.26 13.37 0.39 11.06 0.39 C 8.16 0.39 5.69 -0.69 3.65 -2.85 C 1.61 -5.03 0.59 -7.65 0.59 -10.71 C 0.59 -13.84 1.58 -16.47 3.57 -18.62 C 5.57 -20.78 8.07 -21.85 11.06 -21.85 C 14.55 -21.85 17.31 -20.64 19.34 -18.20 L 16.14 -14.68 C 14.99 -16.51 13.39 -17.43 11.34 -17.43 C 9.83 -17.43 8.54 -16.78 7.48 -15.46 C 6.42 -14.16 5.89 -12.58 5.89 -10.71 C 5.89 -8.89 6.42 -7.33 7.48 -6.04 C 8.54 -4.75 9.83 -4.10 11.34 -4.10 C 12.59 -4.10 13.67 -4.48 14.60 -5.23 C 15.54 -5.99 16.01 -7 16.01 -8.25 L 11.06 -8.25 L 11.06 -12.03 Z M 20.98 -12.03 "/></g></g></g><g fill="#1e8b57"><g transform="translate(116.54, 66.74)"><g><path d="M 6.45 -21.46 L 6.45 0 L 1.56 0 L 1.56 -21.46 Z M 6.45 -21.46 "/></g></g></g><g fill="#1e8b57"><g transform="translate(127.16, 66.74)"><g><path d="M 12.46 -21.46 L 21.14 0 L 15.87 0 L 14.29 -4.29 L 6.12 -4.29 L 4.53 0 L -0.73 0 L 7.93 -21.46 Z M 12.62 -8.59 L 10.23 -14.84 L 10.17 -14.84 L 7.78 -8.59 Z M 12.62 -8.59 "/></g></g></g><g fill="currentColor"><g transform="translate(157.38, 62.08)" fill="currentColor"><g fill="currentColor"><path d="M 1.48 0 L 1.48 -16.59 L 7.29 -16.59 C 9.30 -16.59 10.83 -16.20 11.87 -15.43 C 12.91 -14.66 13.43 -13.53 13.43 -12.04 C 13.43 -11.23 13.22 -10.51 12.81 -9.89 C 12.39 -9.27 11.81 -8.82 11.06 -8.53 C 11.91 -8.32 12.58 -7.89 13.07 -7.25 C 13.56 -6.60 13.81 -5.81 13.81 -4.87 C 13.81 -3.28 13.30 -2.07 12.28 -1.25 C 11.26 -0.42 9.82 -0.00 7.93 0 Z M 4.90 -7.21 L 4.90 -2.75 L 7.82 -2.75 C 8.62 -2.75 9.25 -2.93 9.70 -3.31 C 10.16 -3.69 10.39 -4.22 10.39 -4.90 C 10.39 -6.42 9.60 -7.19 8.03 -7.21 Z M 4.90 -9.64 L 7.43 -9.64 C 9.15 -9.67 10.01 -10.35 10.01 -11.70 C 10.01 -12.45 9.79 -12.99 9.35 -13.32 C 8.92 -13.66 8.23 -13.82 7.29 -13.82 L 4.90 -13.82 Z M 4.90 -9.64 " fill="currentColor"/></g></g></g><g fill="currentColor"><g transform="translate(174.61, 62.08)" fill="currentColor"><g fill="currentColor"><path d="M 14.98 0 L 11.56 0 L 11.56 -7.10 L 4.90 -7.10 L 4.90 0 L 1.48 0 L 1.48 -16.59 L 4.90 -16.59 L 4.90 -9.87 L 11.56 -9.87 L 11.56 -16.59 L 14.98 -16.59 Z M 14.98 0 " fill="currentColor"/></g></g></g><g fill="currentColor"><g transform="translate(193.44, 62.08)" fill="currentColor"><g fill="currentColor"><path d="M 4.90 -5.84 L 4.90 0 L 1.48 0 L 1.48 -16.59 L 7.95 -16.59 C 9.20 -16.59 10.29 -16.36 11.23 -15.90 C 12.17 -15.45 12.91 -14.81 13.42 -13.96 C 13.92 -13.12 14.18 -12.17 14.18 -11.10 C 14.18 -9.47 13.62 -8.18 12.51 -7.25 C 11.39 -6.31 9.86 -5.84 7.90 -5.84 Z M 4.90 -8.60 L 7.95 -8.60 C 8.85 -8.60 9.54 -8.82 10.01 -9.25 C 10.49 -9.67 10.73 -10.28 10.73 -11.07 C 10.73 -11.89 10.49 -12.54 10.01 -13.04 C 9.53 -13.54 8.87 -13.80 8.03 -13.82 L 4.90 -13.82 Z M 4.90 -8.60 " fill="currentColor"/></g></g></g><path stroke-linecap="butt" transform="matrix(0.74, 0, 0, 0.74, 152.91, 34.02)" fill="none" stroke-linejoin="miter" d="M 0.00 1.49 L 80.79 1.49 " stroke="#1e8b57" stroke-width="3"/><path stroke-linecap="butt" transform="matrix(0.74, 0, 0, 0.74, 152.91, 73.06)" fill="none" stroke-linejoin="miter" d="M 0.00 1.49 L 80.79 1.49 " stroke="#1e8b57" stroke-width="3"/><path stroke-linecap="butt" transform="matrix(0, -0.74, 0.74, 0, 210.99, 74.18)" fill="none" stroke-linejoin="miter" d="M 0.00 1.49 L 52.30 1.49 " stroke="#1e8b57" stroke-width="3"/><path stroke-linecap="butt" transform="matrix(0, -0.74, 0.74, 0, 152.91, 75.30)" fill="none" stroke-linejoin="miter" d="M -0.00 1.50 L 12.18 1.50 " stroke="#1e8b57" stroke-width="3"/><path stroke-linecap="butt" transform="matrix(0, -0.74, 0.74, 0, 152.91, 44.16)" fill="none" stroke-linejoin="miter" d="M 0.00 1.50 L 12.18 1.50 " stroke="#1e8b57" stroke-width="3"/></svg></a>
   <nav class="menu" id="menu" aria-label="Menu główne">
+   <a href="#nabor">Nabór 2027</a>
    <a href="#na-co">Na co dotacja</a>
    <a href="#warunki">Warunki</a>
    <a href="#jak">Jak uzyskać</a>
@@ -212,13 +242,13 @@ section[id]{scroll-margin-top:72px}
 <section class="hero">
  <div class="wr">
   <div>
-   <h1>Dotacja z ZUS na BHP - wniosek przygotujemy i rozliczymy za Państwa</h1>
-   <p class="lead">Bezzwrotne pieniądze z konkursu ZUS na maszyny, urządzenia i środki ochrony, w ostatniej edycji nawet do 350 tys. zł brutto. Doradzimy, co kupić, i poprowadzimy wniosek od kwalifikacji do rozliczenia.</p>
+   <h1>Dofinansowanie z ZUS na poprawę BHP - nabór 2027</h1>
+   <p class="lead">Zdobądź do 350&nbsp;000&nbsp;zł brutto bezzwrotnej dotacji na poprawę bezpieczeństwa i warunków pracy w Twojej firmie.</p>
    <div class="akcja">
     <a class="btn btn-z" href="#kontakt">Zapytaj o dotację</a>
     <a class="ttel" href="tel:+48697333390">+48 697 333 390<small>pon.-pt. 8:00-16:00</small></a>
    </div>
-   <p class="sukces"><b>Umowa od sukcesu.</b> Bez kosztów wstępnych - rozliczamy się, gdy ZUS ogłosi listę rankingową firm, które otrzymają dotację.</p>
+   <p class="sukces"><b>Płacisz za efekt, zero ryzyka na starcie.</b> Wynagrodzenie prowizyjne płatne jest dopiero po pozytywnej decyzji ZUS i przyznaniu dofinansowania (projekty z dotacją powyżej 180&nbsp;000&nbsp;zł).</p>
   </div>
   <div class="zdj rama">
    <img class="glowne" src="img/pracownik-oslona-640.webp" srcset="img/pracownik-oslona-420.webp 420w, img/pracownik-oslona-640.webp 640w" sizes="(min-width:1000px) 560px, 46vw" width="640" height="427" alt="Pracownik w kasku i przyłbicy ochronnej przy stole warsztatowym" fetchpriority="high">
@@ -227,14 +257,46 @@ section[id]{scroll-margin-top:72px}
  </div>
 </section>
 
-<section class="liczby" aria-label="Dotacja z ZUS w liczbach">
+<section class="liczby" id="liczby">
  <div class="wr">
+  <p class="wstep">Zakład Ubezpieczeń Społecznych każdego roku ogłasza konkurs na dofinansowanie działań inwestycyjnych i doradczych dla płatników składek. Jako profesjonaliści w branży BHP od lat pomagamy pracodawcom przejść przez cały proces - od audytu i przygotowania dokumentacji, przez złożenie wniosku, aż po końcowe rozliczenie i 3-letni okres trwałości projektu.</p>
+  <h2>Najważniejsze liczby i korzyści finansowe</h2>
   <dl>
-   <div><dt>350&nbsp;tys.&nbsp;zł</dt><dd>najwyższa dotacja brutto dla jednej firmy w ostatniej edycji konkursu</dd></div>
-   <div><dt>80%</dt><dd>wartości projektu może pokryć ZUS, wkład własny w ostatniej edycji wynosił 20%</dd></div>
-   <div><dt>0 zł</dt><dd>kosztów wstępnych, rozliczamy się po liście rankingowej ZUS</dd></div>
-   <div><dt>3 lata</dt><dd>trwałości projektu, dokumenty do ZUS przygotowujemy w ramach współpracy</dd></div>
+   <div class="duza"><dt>do 80%</dt><dd><b>Poziom dofinansowania:</b> do 80% szacowanej wartości projektu (niezależnie od wielkości przedsiębiorstwa - mikro, małe, średnie i duże firmy). Wkład własny wynosi 20%.</dd></div>
+   <div class="duza"><dt>350&nbsp;000&nbsp;zł</dt><dd><b>Maksymalna kwota dotacji:</b> 345&nbsp;000&nbsp;zł brutto (na działania inwestycyjne) lub 350&nbsp;000&nbsp;zł brutto (na działania inwestycyjno-doradcze, w tym do 5&nbsp;000&nbsp;zł na doradztwo).</dd></div>
+   <div><dt>15&nbsp;000&nbsp;zł</dt><dd><b>Minimalna kwota wnioskowanego dofinansowania.</b></dd></div>
+   <div><dt>23% VAT</dt><dd><b>Korzyści podatkowe:</b> od pełnej kwoty zakupu można odliczyć 23% podatku VAT.</dd></div>
+   <div><dt>de minimis</dt><dd><b>Brak limitu pomocy publicznej:</b> dotacja z ZUS nie jest traktowana jako pomoc de minimis (nie pomniejsza puli innych dotacji).</dd></div>
   </dl>
+ </div>
+</section>
+
+<section class="sek" id="nabor">
+ <div class="wr nabor">
+  <h2>Termin naboru - Konkurs ZUS 2027 (nr 2027.01)</h2>
+  <div class="tresc">
+   <p>ZUS nie opublikował jeszcze oficjalnego regulaminu ani dokładnej daty startu nowego naboru. Bazując na harmonogramach z ostatnich lat (poprzedni nabór trwał od 23 lutego do 24 marca), ogłoszenia konkursu należy spodziewać się w lutym 2027 r., a składania wniosków na przełomie lutego i marca 2027 r. (wnioski z tego naboru będą dotyczyć projektów realizowanych w 2028 r.).</p>
+   <p>Oficjalne limity i szczegółowe zasady zostaną potwierdzone po publikacji dokumentacji przez ZUS - podane wyżej kwoty bazują na regulaminie ostatniej edycji i stanowią punkt odniesienia przy planowaniu inwestycji.</p>
+   <div class="fakt fakt-z"><b>Ważne:</b> Ze względu na restrykcyjne wymogi formalne oraz konieczność wcześniejszego wykonania akredytowanych pomiarów środowiska pracy, przygotowania warto rozpocząć z odpowiednim wyprzedzeniem.</div>
+  </div>
+ </div>
+</section>
+
+<section class="sek szara" id="warunki">
+ <div class="wr warunki">
+  <div class="opis">
+   <h2>Kto może wziąć udział w konkursie?</h2>
+   <p>Do konkursu może przystąpić każdy płatnik składek, który spełnia łącznie następujące warunki:</p>
+   <div class="fakt"><b>Wysokość dofinansowania nie zależy od liczby pracowników,</b> rodzaju umów, na podstawie których są zatrudnieni, ani od tego, czy firma jest prywatna, czy publiczna.</div>
+   <a class="dalej" href="w-przygotowaniu.html">Warunki i dokumenty konkursu</a>
+  </div>
+  <ol class="lista">
+   <li>Nie zalega z opłacaniem składek na ubezpieczenia społeczne i zdrowotne.</li>
+   <li>Nie zalega z opłacaniem podatków.</li>
+   <li>Nie znajduje się w stanie upadłości, pod zarządem komisarycznym, w toku likwidacji, postępowania układowego lub upadłościowego.</li>
+   <li>Nie ubiega się o kolejne dofinansowanie przed upływem 3 lat od dnia wypłaty przez ZUS całości ostatniego dofinansowania.</li>
+   <li>Nie ubiega się o kolejne dofinansowanie przed upływem 3 lat od dnia zwrotu wcześniejszego dofinansowania (jeśli był do tego zobowiązany).</li>
+  </ol>
  </div>
 </section>
 
@@ -257,53 +319,49 @@ section[id]{scroll-margin-top:72px}
  </div>
 </section>
 
-<section class="sek szara" id="warunki">
- <div class="wr warunki">
-  <div class="opis">
-   <h2>Warunki udziału w konkursie</h2>
-   <p>Do konkursu może przystąpić płatnik składek, który spełnia łącznie wszystkie warunki z listy. Sprawdzimy je razem z Państwem jeszcze przed przygotowaniem wniosku.</p>
-   <div class="fakt"><b>Wysokość dofinansowania nie zależy od liczby pracowników,</b> rodzaju umów, na podstawie których są zatrudnieni, ani od tego, czy firma jest prywatna, czy publiczna.</div>
-   <a class="dalej" href="w-przygotowaniu.html">Warunki i dokumenty konkursu</a>
+<section class="sek szara" id="jak">
+ <div class="wr">
+  <div class="glowa">
+   <h2>Kompleksowa obsługa „od A do Z” - co dokładnie robimy?</h2>
+   <p>Przejmujemy na siebie cały ciężar formalny i techniczny projektu.</p>
   </div>
-  <ol class="lista">
-   <li>Nie zalega z opłacaniem składek na ubezpieczenia społeczne i zdrowotne.</li>
-   <li>Nie zalega z opłacaniem podatków.</li>
-   <li>Nie jest w upadłości, pod zarządem komisarycznym, w likwidacji ani w postępowaniu upadłościowym lub układowym.</li>
-   <li>Nie ubiega się o kolejne dofinansowanie przed upływem 3 lat od wypłaty przez ZUS całości ostatniego dofinansowania.</li>
-   <li>Nie ubiega się o kolejne dofinansowanie przed upływem 3 lat od zwrotu dofinansowania, do którego był zobowiązany.</li>
+  <ol class="etapy">
+   <li><span class="nr">Etap 1</span><h3>Audyt i weryfikacja ofert dostawców</h3><p>Sprawdzamy specyfikacje techniczne maszyn i urządzeń pod kątem restrykcyjnych wymogów ZUS (m.in. parametry techniczne, status fabrycznej nowości, zapisy gwarancyjne i serwisowe).</p></li>
+   <li><span class="nr">Etap 2</span><h3>Pełna dokumentacja BHP w cenie usługi</h3><p>Opracowujemy dedykowane dla badanych stanowisk Oceny Ryzyka Zawodowego (np. metodą Risk Score) oraz Oceny Obciążenia Układu Mięśniowo-Szkieletowego (metodami OWAS / REBA). Nie angażujemy Państwa służb BHP.</p></li>
+   <li><span class="nr">Etap 3</span><h3>Koordynacja pomiarów środowiska pracy</h3><p>Organizujemy wymagane badania środowiska pracy (m.in. hałas, zapylenie, oświetlenie) we współpracy z akredytowanymi laboratoriami na terenie całego kraju.</p></li>
+   <li><span class="nr">Etap 4</span><h3>Przygotowanie wniosku i korekty</h3><p>Kompletujemy i składamy wniosek w systemie PUE ZUS, prowadzimy korespondencję z ekspertami ZUS i bezpłatnie wprowadzamy ewentualne uzupełnienia, korekty oraz wszelkie pisma dotyczące projektu.</p></li>
+   <li><span class="nr">Etap 5</span><h3>Rozliczenie końcowe i 3-letnia opieka w okresie trwałości</h3><p>Sporządzamy Sprawozdanie Końcowe po zakupie urządzeń oraz zapewniamy 3-letnie wsparcie formalne w okresie trwałości inwestycji.</p></li>
   </ol>
+  <a class="dalej" href="w-przygotowaniu.html">Krok po kroku: jak uzyskać dotację</a>
  </div>
 </section>
 
-<section class="sek" id="jak">
+<section class="sek" id="dlaczego">
  <div class="wr">
-  <div class="glowa">
-   <h2>Jak uzyskać dotację z ZUS na BHP</h2>
-   <p>Wymagania ZUS, takie jak projekty, koncepcje czy pomiary, potrzebują czasu - szczególnie przy odpylaniu, filtrowentylacji, klimatyzacji i oświetleniu. Dlatego warto zacząć wcześniej.</p>
+  <div class="glowa"><h2>Dlaczego warto wybrać właśnie nas?</h2></div>
+  <div class="powody">
+   <article><h3>Zamykamy i rozliczamy projekt (3/4 całej pracy)</h3><p>W przeciwieństwie do wielu firm doradczych nie ograniczamy się jedynie do napisania wniosku. Zajmujemy się również jego zamknięciem, rozliczeniem i wykonaniem Sprawozdania Końcowego do ZUS - co inni często pomijają w ofertach, a następnie wymagają za to wysokiego dodatkowego wynagrodzenia.</p></article>
+   <article><h3>Bezpłatne wsparcie przez 3 lata trwałości</h3><p>Jesteśmy z Państwem przez cały 3-letni okres trwałości projektu. Jeśli w tym czasie ZUS zażąda dodatkowych dokumentów, wyjaśnień lub uzupełnień, przygotowujemy je całkowicie nieodpłatnie w ramach naszej współpracy.</p></article>
+   <article><h3>Zero obciążenia dla Państwa BHP-owca</h3><p>Całą niezbędną dokumentację BHP (oceny ryzyka zawodowego, oceny ergonomiczne) wykonujemy samodzielnie, odciążając Państwa wewnętrzny dział BHP.</p></article>
   </div>
-  <ol class="etapy">
-   <li><span class="nr">Etap 1</span><h3>Kwalifikacja</h3><p>Sprawdzamy, czy firma spełnia warunki konkursu.</p></li>
-   <li><span class="nr">Etap 2</span><h3>Wybór przedmiotu dofinansowania</h3><p>Dobieramy zakupy do potrzeb stanowisk i katalogu działań ZUS.</p></li>
-   <li><span class="nr">Etap 3</span><h3>Kompletny wniosek do ZUS</h3><p>Przygotowujemy wniosek wraz z wymaganymi dokumentami.</p></li>
-   <li><span class="nr">Etap 4</span><h3>Przyznanie dotacji i umowa</h3><p>Po decyzji ZUS pomagamy przy umowie i rozliczeniu.</p></li>
-  </ol>
-  <a class="dalej" href="w-przygotowaniu.html">Krok po kroku: jak uzyskać dotację</a>
  </div>
 </section>
 
 <section class="sek ciemna" id="odplatnosc">
  <div class="wr odpl">
   <div>
-   <h2>Odpłatność: umowa od sukcesu</h2>
-   <p class="lead">Nie ponoszą Państwo kosztów wstępnych. Rozliczamy się, kiedy ZUS ogłosi listę rankingową firm, które otrzymają dotację.</p>
+   <h2>Bezpieczne zasady rozliczeń - płacisz za efekt, zero ryzyka na starcie</h2>
+   <p class="lead">Warunki współpracy dopasowujemy indywidualnie do skali i stopnia złożoności planowanej inwestycji.</p>
    <ul class="punkty">
-    <li>Rozliczenie po liście rankingowej ZUS przy zakupach powyżej 150 tys. zł.</li>
-    <li>Cena obejmuje sporządzenie wniosku i jego rozliczenie.</li>
-    <li>Przez 3 lata trwałości projektu wszystkie dokumenty do ZUS przygotowujemy bezpłatnie w ramach współpracy.</li>
+    <li><b>Opcja 100% Success Fee (wynagrodzenie wyłącznie od sukcesu):</b> Dla projektów o wartości wnioskowanej dotacji powyżej 180&nbsp;000&nbsp;zł oferujemy rozliczenie w formule zero kosztów na start. Wynagrodzenie prowizyjne płatne jest dopiero po pozytywnej decyzji ZUS i przyznaniu dofinansowania.</li>
+    <li><b>Model mieszany dla mniejszych projektów:</b> Przy mniejszych inwestycjach warunki wynagrodzenia ustalamy indywidualnie po wstępnej analizie Państwa potrzeb.</li>
    </ul>
    <a class="dalej" href="w-przygotowaniu.html">Szczegóły odpłatności</a>
   </div>
-  <div class="rama"><img src="img/podpis-umowy-640.webp" srcset="img/podpis-umowy-420.webp 420w, img/podpis-umowy-640.webp 640w" sizes="(min-width:900px) 440px, 220px" width="640" height="427" loading="lazy" alt="Podpisywanie umowy o przygotowanie wniosku"></div>
+  <div class="rama gwarancja">
+   <h3>Nasza gwarancja - gramy do skutku bez dodatkowych kosztów</h3>
+   <p>Dofinansowanie z ZUS przyznawane jest w trybie konkursowym. Jeżeli mimo spełnienia wymogów formalnych wniosek nie uzyska dofinansowania w danej edycji (np. z powodu wyczerpania puli środków), składamy go ponownie w kolejnym naborze całkowicie bezpłatnie - bez żadnych dodatkowych opłat za ponowne przygotowanie i aktualizację dokumentacji.</p>
+  </div>
  </div>
 </section>
 
@@ -313,9 +371,10 @@ section[id]{scroll-margin-top:72px}
   <div class="pyt">
    <details open><summary>Kto może skorzystać z dotacji z ZUS na BHP?</summary><p>Wszyscy płatnicy składek, którzy spełniają warunki konkursu: nie zalegają ze składkami i podatkami, nie są w upadłości ani likwidacji i nie otrzymali dofinansowania w ciągu ostatnich 3 lat.</p></details>
    <details><summary>Czy kwota zależy od liczby pracowników?</summary><p>Nie. Wysokość dotacji nie zależy od liczby zatrudnionych, rodzaju umów ani od tego, czy firma jest prywatna, czy publiczna.</p></details>
-   <details><summary>Jaki jest wkład własny?</summary><p>W ostatniej edycji konkursu wkład własny wynosił 20%. Aktualne zasady podajemy po ogłoszeniu przez ZUS kolejnej edycji.</p></details>
-   <details><summary>Kiedy ruszy nabór wniosków?</summary><p>Terminy ogłasza ZUS. W ostatniej edycji wnioski przyjmowano od 23 lutego do 24 marca 2026 r. Warto przygotować się wcześniej, bo projekty i pomiary wymagane przez ZUS zajmują sporo czasu.</p></details>
-   <details><summary>Kiedy płacę za przygotowanie wniosku?</summary><p>Rozliczamy się dopiero, gdy ZUS ogłosi listę rankingową firm, które otrzymają dotację (przy zakupach powyżej 150 tys. zł). Cena obejmuje także rozliczenie i dokumenty w 3-letnim okresie trwałości.</p></details>
+   <details><summary>Jaki jest wkład własny?</summary><p>Wkład własny wynosi 20%. Poziom dofinansowania to do 80% szacowanej wartości projektu, niezależnie od wielkości przedsiębiorstwa (mikro, małe, średnie i duże firmy).</p></details>
+   <details><summary>Kiedy ruszy nabór wniosków?</summary><p>ZUS nie opublikował jeszcze oficjalnego regulaminu ani dokładnej daty startu nowego naboru. Ogłoszenia konkursu należy spodziewać się w lutym 2027 r., a składania wniosków na przełomie lutego i marca 2027 r. (poprzedni nabór trwał od 23 lutego do 24 marca).</p></details>
+   <details><summary>Kiedy płacę za przygotowanie wniosku?</summary><p>Dla projektów o wartości wnioskowanej dotacji powyżej 180&nbsp;000&nbsp;zł wynagrodzenie prowizyjne płatne jest dopiero po pozytywnej decyzji ZUS i przyznaniu dofinansowania. Przy mniejszych inwestycjach warunki wynagrodzenia ustalamy indywidualnie po wstępnej analizie Państwa potrzeb.</p></details>
+   <details><summary>Co, jeśli wniosek nie dostanie dofinansowania?</summary><p>Jeżeli mimo spełnienia wymogów formalnych wniosek nie uzyska dofinansowania w danej edycji (np. z powodu wyczerpania puli środków), składamy go ponownie w kolejnym naborze całkowicie bezpłatnie.</p></details>
   </div>
   <a class="dalej" href="w-przygotowaniu.html">Wszystkie pytania i odpowiedzi</a>
  </div>
@@ -361,7 +420,7 @@ section[id]{scroll-margin-top:72px}
    </div>
    <div>
     <h3>Na stronie</h3>
-    <ul><li><a href="#na-co">Na co dotacja</a></li><li><a href="#warunki">Warunki</a></li><li><a href="#jak">Jak uzyskać</a></li><li><a href="#odplatnosc">Odpłatność</a></li><li><a href="#pytania">Pytania i odpowiedzi</a></li></ul>
+    <ul><li><a href="#nabor">Nabór 2027</a></li><li><a href="#na-co">Na co dotacja</a></li><li><a href="#warunki">Warunki</a></li><li><a href="#jak">Jak uzyskać</a></li><li><a href="#odplatnosc">Odpłatność</a></li><li><a href="#pytania">Pytania i odpowiedzi</a></li></ul>
    </div>
   </div>
   <div class="dol">
