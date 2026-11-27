@@ -220,6 +220,44 @@ border:3px solid var(--z);border-left:0;background:linear-gradient(var(--z),var(
 .odpl .gwarancja p{color:#D6E9DF;font-size:16.5px}
 @media (max-width:899px){.odpl .gwarancja{width:calc(100% - 28px);max-width:none}}
 section[id]{scroll-margin-top:72px}
+
+
+/* oś czasu konkursu */
+.os{list-style:none;margin:0;padding:0;position:relative;max-width:1000px}
+.os::before{content:"";position:absolute;left:11px;top:8px;bottom:8px;width:3px;background:var(--z)}
+.os li{position:relative;padding:0 0 38px 52px}
+.os li:last-child{padding-bottom:0}
+.os li::before{content:"";position:absolute;left:0;top:4px;width:25px;height:25px;background:#fff;border:3px solid var(--z);border-left-color:transparent}
+.os .kiedy{display:inline-block;font:600 14px/1.2 Jost,sans-serif;letter-spacing:.04em;text-transform:uppercase;color:var(--zh);margin-bottom:6px}
+.os h3{margin-bottom:8px}
+.os .co{color:var(--t2);font-size:17px;max-width:44em}
+.os .rola{display:flex;gap:12px;align-items:flex-start;margin-top:12px;padding:14px 16px;background:#EAF6EF;font-size:16px;max-width:46em}
+.szara .os .rola{background:#fff}
+.os .tag,.os-leg .tag{flex:none;font:600 13px/1 Jost,sans-serif;text-transform:uppercase;letter-spacing:.05em;padding:6px 8px;background:var(--zh);color:#fff}
+.os .tag.ws,.os-leg .tag.ws{background:#fff;color:var(--zh);box-shadow:inset 0 0 0 2px var(--zh)}
+.os .tag.fi,.os-leg .tag.fi{background:var(--t);color:#fff}
+@media (max-width:640px){.os .rola{flex-direction:column;gap:8px}.os li{padding-left:44px}}
+.os-leg{display:flex;flex-wrap:wrap;gap:10px 22px;margin:0 0 32px;font-size:15px;color:var(--t2)}
+.os-leg span{display:inline-flex;gap:8px;align-items:center}
+@media (min-width:1000px){.os-wr{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:64px;align-items:start}.os-wr .glowa{display:block;position:sticky;top:110px}.os-wr .glowa p{margin-top:18px}}
+/* zaproszenie do kontaktu */
+.zapr{margin-top:72px;background:var(--zc);color:#fff;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:28px 48px;padding:clamp(26px,4vw,48px);align-items:start}
+.zapr h2{font-size:clamp(24px,2.8vw,34px)}
+.zapr .op{color:#C9D6CF;margin-top:12px;max-width:34em}
+.zapr .tz{display:inline-block;margin-top:22px;font:600 clamp(22px,2.4vw,28px)/1.2 Jost,sans-serif;color:#fff;text-decoration:none;border-left:3px solid #4CC488;padding-left:14px}
+.zapr .tz small{display:block;font:400 14px/1.4 Archivo,sans-serif;color:#C9D6CF}
+.zapr .form{color:var(--t)}
+.zapr .form textarea{min-height:96px}
+@media (max-width:860px){.zapr{grid-template-columns:1fr}}
+@media (max-width:520px){.zapr .form .pola{grid-template-columns:1fr}}
+.zapr-m{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin:28px 0 0;padding:16px 20px;background:#EAF6EF;border-left:3px solid var(--z);font-size:16.5px}
+.zapr-m a{color:var(--zh);font-weight:600}
+/* zapowiedź błędów na głównej */
+.bl-lista{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 40px}
+.bl-lista li{position:relative;padding:16px 0 16px 34px;border-top:1px solid #D3D9D6;font-size:17px}
+.bl-lista li::before{content:"";position:absolute;left:2px;top:23px;width:14px;height:3px;background:#C0392B;box-shadow:0 0 0 0}
+.bl-lista b{font-family:Jost,sans-serif;font-weight:600}
+@media (max-width:760px){.bl-lista{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -289,17 +327,17 @@ section[id]{scroll-margin-top:72px}
 <section class="sek szara" id="warunki">
  <div class="wr warunki">
   <div class="opis">
-   <h2>Kto może wziąć udział w konkursie?</h2>
-   <p>Do konkursu może przystąpić każdy płatnik składek, który spełnia łącznie następujące warunki:</p>
+   <h2>Warunki udziału w konkursie</h2>
+   <p>Do konkursu może przystąpić płatnik składek, który spełnia łącznie następujące warunki:</p>
    <div class="fakt"><b>Wysokość dofinansowania nie zależy od liczby pracowników,</b> rodzaju umów, na podstawie których są zatrudnieni, ani od tego, czy firma jest prywatna, czy publiczna.</div>
    <a class="dalej" href="w-przygotowaniu.html">Warunki i dokumenty konkursu</a>
   </div>
   <ol class="lista">
-   <li>Nie zalega z opłacaniem składek na ubezpieczenia społeczne i zdrowotne.</li>
-   <li>Nie zalega z opłacaniem podatków.</li>
-   <li>Nie znajduje się w stanie upadłości, pod zarządem komisarycznym, w toku likwidacji, postępowania układowego lub upadłościowego.</li>
-   <li>Nie ubiega się o kolejne dofinansowanie przed upływem 3 lat od dnia wypłaty przez ZUS całości ostatniego dofinansowania.</li>
-   <li>Nie ubiega się o kolejne dofinansowanie przed upływem 3 lat od dnia zwrotu wcześniejszego dofinansowania (jeśli był do tego zobowiązany).</li>
+   <li>nie zalega z opłacaniem składek na ubezpieczenia społeczne i ubezpieczenia zdrowotne;</li>
+   <li>nie zalega z opłacaniem podatków;</li>
+   <li>nie znajduje się w stanie upadłości, pod zarządem komisarycznym, w toku likwidacji, postępowania upadłościowego lub postępowania układowego z wierzycielem;</li>
+   <li>nie ubiega się o kolejne dofinansowanie przed upływem 3 lat od dnia wypłaty przez ZUS całości ostatniego dofinansowania;</li>
+   <li>nie ubiega się o kolejne dofinansowanie przed upływem 3 lat od dnia zwrotu dofinansowania, do którego został zobowiązany.</li>
   </ol>
  </div>
 </section>
@@ -351,6 +389,29 @@ section[id]{scroll-margin-top:72px}
  </div>
 </section>
 
+<section class="sek szara" id="harmonogram">
+ <div class="wr os-wr">
+  <div class="glowa">
+   <h2>Oś czasu konkursu ZUS - etapy i nasza rola</h2>
+   <p>Od przygotowań przed ogłoszeniem konkursu do końca okresu trwałości. Wnioski składane w naborze 2027 dotyczą projektów realizowanych w 2028 r. Przy każdym etapie zaznaczamy, co robimy my, a co należy do firmy.</p>
+  </div>
+  <div>
+   <p class="os-leg"><span><span class="tag my">Energia BHP</span> robimy za Państwa</span><span><span class="tag ws">Wspólnie</span> dzielimy zadania</span><span><span class="tag fi">Firma</span> po Państwa stronie, z naszym wsparciem</span></p>
+   <ol class="os">
+    <li><span class="kiedy">Październik - styczeń</span><h3>Przygotowanie projektu</h3><p class="co">Wybór stanowisk pracy i zagrożeń, które projekt ma ograniczyć, np. hałas, pyły, złe oświetlenie czy dźwiganie. Do wniosku potrzebna jest ocena ryzyka zawodowego każdego stanowiska objętego projektem i aktualne pomiary czynników szkodliwych.</p><p class="rola"><span class="tag my">Energia BHP</span><span>Audyt stanowisk, oceny ryzyka zawodowego i oceny obciążenia układu mięśniowo-szkieletowego (OWAS / REBA), zlecenie pomiarów akredytowanym laboratoriom.</span></p></li>
+    <li><span class="kiedy">Styczeń - luty</span><h3>Oferty i budżet projektu</h3><p class="co">Imienne oferty dostawców na konkretny, fabrycznie nowy sprzęt, z ceną brutto w złotych. Każda pozycja musi mieścić się w Katalogu działań i w limitach kwot.</p><p class="rola"><span class="tag ws">Wspólnie</span><span>Firma zbiera oferty od dostawców, my sprawdzamy parametry, rok produkcji, zgodność z Katalogiem działań i liczymy kwotę dofinansowania.</span></p></li>
+    <li><span class="kiedy">Luty</span><h3>Regulamin nowej edycji</h3><p class="co">ZUS publikuje w BIP regulamin konkursu z załącznikami. Zasady potrafią zmieniać się z roku na rok, dlatego dokumenty sprawdza się dopiero z aktualnym regulaminem.</p><p class="rola"><span class="tag my">Energia BHP</span><span>Porównujemy przygotowaną dokumentację z nowym regulaminem i nanosimy zmiany.</span></p></li>
+    <li><span class="kiedy">Luty - marzec</span><h3>Nabór wniosków</h3><p class="co">Wniosek składa się wyłącznie elektronicznie przez prewencja.zus.pl, podpisany kwalifikowanym podpisem elektronicznym. W poprzedniej edycji nabór trwał od 23 lutego do 24 marca.</p><p class="rola"><span class="tag ws">Wspólnie</span><span>Przygotowujemy wniosek ze wszystkimi załącznikami i składamy go w terminie. Firma podpisuje dokumenty podpisem kwalifikowanym (profil zaufany nie wystarcza).</span></p></li>
+    <li><span class="kiedy">Kwiecień - grudzień</span><h3>Ocena wniosku i lista rankingowa</h3><p class="co">Najpierw ocena formalna (braki można uzupełnić tylko raz), potem ocena merytoryczna eksperta CIOP-PIB, możliwa jest też wizyta monitorująca. Lista rankingowa ukazuje się najpóźniej do 31 grudnia.</p><p class="rola"><span class="tag my">Energia BHP</span><span>Prowadzimy korespondencję z ZUS i w terminie odpowiadamy na wezwania. Jeśli wniosek mimo spełnienia wymogów nie dostanie dofinansowania, składamy go ponownie w kolejnym naborze bez dodatkowych opłat.</span></p></li>
+    <li><span class="kiedy">Styczeń roku realizacji</span><h3>Umowa z ZUS i zaliczka</h3><p class="co">Zakwalifikowana firma zawiera umowę z ZUS i wskazuje wyodrębniony rachunek. I transza, czyli zaliczka do 60% dofinansowania, wpływa w ciągu 14 dni od zawarcia umowy.</p><p class="rola"><span class="tag ws">Wspólnie</span><span>Przygotowujemy dane do umowy, firma otwiera wyodrębniony rachunek i podpisuje umowę.</span></p></li>
+    <li><span class="kiedy">W roku realizacji</span><h3>Zakupy i montaż</h3><p class="co">Sprzęt można kupić dopiero po podpisaniu umowy, nie wcześniej niż 1 stycznia roku realizacji. Leasing odpada, a zmiana dostawcy czy urządzenia wymaga wcześniejszej zgody ZUS.</p><p class="rola"><span class="tag fi">Firma</span><span>Firma kupuje sprzęt zgodnie z ofertami z wniosku. My pilnujemy zgodności z umową i w razie potrzeby występujemy do ZUS o zgodę na zmiany.</span></p></li>
+    <li><span class="kiedy">Po zakupach</span><h3>Rozliczenie i II transza</h3><p class="co">Sprawozdanie końcowe z ponowną oceną ryzyka zawodowego, wykonaną tą samą metodą co ocena dołączona do wniosku, potem odbiór projektu przez ZUS. II transza wpływa w ciągu 30 dni od odbioru.</p><p class="rola"><span class="tag my">Energia BHP</span><span>Sporządzamy sprawozdanie końcowe i ponowne oceny ryzyka, przygotowujemy firmę do odbioru projektu.</span></p></li>
+    <li><span class="kiedy">3 lata</span><h3>Okres trwałości projektu</h3><p class="co">Przez 3 lata od odbioru firma utrzymuje stanowiska pracy objęte projektem, zakupiony sprzęt i status płatnika składek. Zawieszenie działalności przerywa okres trwałości.</p><p class="rola"><span class="tag my">Energia BHP</span><span>Bezpłatnie przygotowujemy dokumenty, wyjaśnienia i uzupełnienia, o które w tym czasie poprosi ZUS.</span></p></li>
+   </ol>
+  </div>
+ </div>
+</section>
+
 <section class="sek ciemna" id="odplatnosc">
  <div class="wr odpl">
   <div>
@@ -369,6 +430,22 @@ section[id]{scroll-margin-top:72px}
  </div>
 </section>
 
+<section class="sek szara" id="bledy">
+ <div class="wr">
+  <div class="glowa">
+   <h2>Najczęstsze błędy we wnioskach o dotację z ZUS</h2>
+   <p>Wiele wniosków traci szansę na dofinansowanie z powodów, których da się uniknąć. Zebraliśmy je na podstawie oficjalnych odpowiedzi ZUS do konkursu.</p>
+  </div>
+  <ul class="bl-lista">
+   <li><b>Sprzęt spoza Katalogu działań.</b> ZUS dofinansowuje wyłącznie działania wymienione w załączniku nr 4 do regulaminu.</li>
+   <li><b>Brak oceny ryzyka lub pomiarów.</b> Bez dokumentów potwierdzających zagrożenie ekspert nie oceni sensu projektu.</li>
+   <li><b>Oferta niezgodna z wnioskiem.</b> Oferta ma dotyczyć konkretnego, fabrycznie nowego urządzenia, z ceną brutto w złotych.</li>
+   <li><b>Zakup przed umową z ZUS.</b> Wydatek sprzed podpisania umowy jest niekwalifikowalny, tak samo jak leasing.</li>
+  </ul>
+  <a class="dalej" href="najczestsze-bledy-we-wnioskach.html">Wszystkie błędy i jak ich uniknąć</a>
+ </div>
+</section>
+
 <section class="sek" id="pytania">
  <div class="wr">
   <div class="glowa"><h2>Pytania i odpowiedzi</h2><p>Najczęstsze pytania o konkurs ZUS i naszą pomoc. Wszystkie 113 pytań i odpowiedzi z katalogu ZUS są na osobnej podstronie, z wyszukiwarką.</p></div>
@@ -382,6 +459,7 @@ section[id]{scroll-margin-top:72px}
   </div>
   <p class="zrodlo">Oficjalne odpowiedzi ZUS do ostatniej edycji: <a href="https://bip.zus.pl/documents/493361/13807439/Katalog+przyk%C5%82adowych+pyta%C5%84+i+odpowiedzi_+Konkurs+2026.01.pdf/835b94f7-88e5-2403-aa03-b799e7605138" target="_blank" rel="noopener">Katalog przykładowych pytań i odpowiedzi, Konkurs 2026.01 (PDF, BIP ZUS)</a></p>
   <a class="dalej" href="pytania-i-odpowiedzi.html">Wszystkie pytania i odpowiedzi (113)</a>
+  <p class="zapr-m"><b>Pytanie o Twój projekt?</b> Zadzwoń: <a href="tel:+48697333390">697 333 390</a> albo napisz przez <a href="#kontakt">formularz</a>.</p>
  </div>
 </section>
 
@@ -425,7 +503,7 @@ section[id]{scroll-margin-top:72px}
    </div>
    <div>
     <h3>Na stronie</h3>
-    <ul><li><a href="#nabor">Nabór 2027</a></li><li><a href="#na-co">Na co dotacja</a></li><li><a href="#warunki">Warunki</a></li><li><a href="#jak">Jak uzyskać</a></li><li><a href="#odplatnosc">Odpłatność</a></li><li><a href="pytania-i-odpowiedzi.html">Pytania i odpowiedzi</a></li></ul>
+    <ul><li><a href="#nabor">Nabór 2027</a></li><li><a href="#na-co">Na co dotacja</a></li><li><a href="#warunki">Warunki</a></li><li><a href="#jak">Jak uzyskać</a></li><li><a href="#odplatnosc">Odpłatność</a></li><li><a href="pytania-i-odpowiedzi.html">Pytania i odpowiedzi</a></li><li><a href="najczestsze-bledy-we-wnioskach.html">Najczęstsze błędy we wnioskach</a></li></ul>
    </div>
   </div>
   <div class="dol">

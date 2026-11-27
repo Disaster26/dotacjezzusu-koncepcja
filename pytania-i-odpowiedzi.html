@@ -221,6 +221,44 @@ border:3px solid var(--z);border-left:0;background:linear-gradient(var(--z),var(
 @media (max-width:899px){.odpl .gwarancja{width:calc(100% - 28px);max-width:none}}
 section[id]{scroll-margin-top:72px}
 
+
+/* oś czasu konkursu */
+.os{list-style:none;margin:0;padding:0;position:relative;max-width:1000px}
+.os::before{content:"";position:absolute;left:11px;top:8px;bottom:8px;width:3px;background:var(--z)}
+.os li{position:relative;padding:0 0 38px 52px}
+.os li:last-child{padding-bottom:0}
+.os li::before{content:"";position:absolute;left:0;top:4px;width:25px;height:25px;background:#fff;border:3px solid var(--z);border-left-color:transparent}
+.os .kiedy{display:inline-block;font:600 14px/1.2 Jost,sans-serif;letter-spacing:.04em;text-transform:uppercase;color:var(--zh);margin-bottom:6px}
+.os h3{margin-bottom:8px}
+.os .co{color:var(--t2);font-size:17px;max-width:44em}
+.os .rola{display:flex;gap:12px;align-items:flex-start;margin-top:12px;padding:14px 16px;background:#EAF6EF;font-size:16px;max-width:46em}
+.szara .os .rola{background:#fff}
+.os .tag,.os-leg .tag{flex:none;font:600 13px/1 Jost,sans-serif;text-transform:uppercase;letter-spacing:.05em;padding:6px 8px;background:var(--zh);color:#fff}
+.os .tag.ws,.os-leg .tag.ws{background:#fff;color:var(--zh);box-shadow:inset 0 0 0 2px var(--zh)}
+.os .tag.fi,.os-leg .tag.fi{background:var(--t);color:#fff}
+@media (max-width:640px){.os .rola{flex-direction:column;gap:8px}.os li{padding-left:44px}}
+.os-leg{display:flex;flex-wrap:wrap;gap:10px 22px;margin:0 0 32px;font-size:15px;color:var(--t2)}
+.os-leg span{display:inline-flex;gap:8px;align-items:center}
+@media (min-width:1000px){.os-wr{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:64px;align-items:start}.os-wr .glowa{display:block;position:sticky;top:110px}.os-wr .glowa p{margin-top:18px}}
+/* zaproszenie do kontaktu */
+.zapr{margin-top:72px;background:var(--zc);color:#fff;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:28px 48px;padding:clamp(26px,4vw,48px);align-items:start}
+.zapr h2{font-size:clamp(24px,2.8vw,34px)}
+.zapr .op{color:#C9D6CF;margin-top:12px;max-width:34em}
+.zapr .tz{display:inline-block;margin-top:22px;font:600 clamp(22px,2.4vw,28px)/1.2 Jost,sans-serif;color:#fff;text-decoration:none;border-left:3px solid #4CC488;padding-left:14px}
+.zapr .tz small{display:block;font:400 14px/1.4 Archivo,sans-serif;color:#C9D6CF}
+.zapr .form{color:var(--t)}
+.zapr .form textarea{min-height:96px}
+@media (max-width:860px){.zapr{grid-template-columns:1fr}}
+@media (max-width:520px){.zapr .form .pola{grid-template-columns:1fr}}
+.zapr-m{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin:28px 0 0;padding:16px 20px;background:#EAF6EF;border-left:3px solid var(--z);font-size:16.5px}
+.zapr-m a{color:var(--zh);font-weight:600}
+/* zapowiedź błędów na głównej */
+.bl-lista{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 40px}
+.bl-lista li{position:relative;padding:16px 0 16px 34px;border-top:1px solid #D3D9D6;font-size:17px}
+.bl-lista li::before{content:"";position:absolute;left:2px;top:23px;width:14px;height:3px;background:#C0392B;box-shadow:0 0 0 0}
+.bl-lista b{font-family:Jost,sans-serif;font-weight:600}
+@media (max-width:760px){.bl-lista{grid-template-columns:1fr}}
+
 /* podstrona pytań i odpowiedzi */
 .menu a[aria-current]{color:var(--zh);box-shadow:inset 0 -3px 0 var(--z)}
 .ph{background:linear-gradient(180deg,#fff 0%,#F1F8F3 100%);padding:44px 0 52px;border-bottom:1px solid #DDE2E0}
@@ -308,7 +346,7 @@ mark{background:#FFE27A;color:inherit;padding:0 1px}
   <p class="lead">Wszystkie 113 pytań i odpowiedzi z oficjalnego katalogu ZUS do ostatniej edycji konkursu (nr 2026.01), w 10 tematach: od złożenia wniosku, przez kwoty i załączniki, po umowę, rozliczenie i odwołanie.</p>
   <div class="zr">
    <p><b>Źródło:</b> Zakład Ubezpieczeń Społecznych, <a href="https://bip.zus.pl/documents/493361/13807439/Katalog+przyk%C5%82adowych+pyta%C5%84+i+odpowiedzi_+Konkurs+2026.01.pdf/835b94f7-88e5-2403-aa03-b799e7605138" target="_blank" rel="noopener">Katalog przykładowych pytań i odpowiedzi, Konkurs 2026.01 (PDF)</a>. Pełna dokumentacja konkursu (regulamin, katalog działań, wzory umów): <a href="https://bip.zus.pl/konkurs-dofinansowanie-dzialan-platnika-skladek-na-poprawe-bezpieczenstwa-i-higieny-pracy/konkurs-202601" target="_blank" rel="noopener">BIP ZUS, Konkurs 2026.01</a>.</p>
-   <p>Odpowiedzi przytaczamy w brzmieniu ZUS, dlatego „my” oznacza w nich ZUS. Przygotowując Państwa wniosek, sprawdzamy każdą kwestię z regulaminem aktualnej edycji.</p>
+   <p>Odpowiedzi przytaczamy w brzmieniu ZUS, dlatego „my” oznacza w nich ZUS. Przygotowując Państwa wniosek, sprawdzamy każdą kwestię z regulaminem aktualnej edycji. Zobacz też: <a href="najczestsze-bledy-we-wnioskach.html">najczęstsze błędy we wnioskach</a>.</p>
   </div>
  </div>
 </section>
@@ -368,6 +406,7 @@ mark{background:#FFE27A;color:inherit;padding:0 1px}
 <details id="p-30"><summary><span class="nr">30</span><span class="q">Jeżeli korzystam z „ulgi na start”, która na mocy ustawy zwalnia mnie z opłacania składki na ubezpieczenia społecznie i jednocześnie nie zalegam z opłaceniem składki na ubezpieczenie zdrowotne, to czy mogę korzystać z dofinansowania? Czy muszę zgłosić się do ubezpieczenia społecznego?</span></summary><div class="odp"><p>W Konkursie możesz wziąć udział, jeśli jesteś płatnikiem składek na ubezpieczenia społeczne i ubezpieczenie zdrowotne. Jeżeli nie odprowadzasz składek na ubezpieczenia społeczne, nie spełniasz warunku uczestnictwa w Konkursie i nie możesz ubiegać się o dofinansowanie.</p></div></details>
 <details id="p-31"><summary><span class="nr">31</span><span class="q">Czy o dofinansowanie może ubiegać się płatnik składek, który ma zawartą umowę z ZUS o rozłożenie spłaty zadłużenia na raty?</span></summary><div class="odp"><p>Układ ratalny to możliwość spłaty zadłużenia z tytułu składek w miesięcznych ratach, w okresie uzgodnionym z ZUS.</p><p>Jeżeli spłacasz układ ratalny <strong>zgodnie z umową,</strong> to będziesz potraktowany tak, jakbyś nie miał zaległości w opłacaniu składek i możesz ubiegać się o dofinansowanie w ramach Konkursu.</p></div></details>
 </div></section>
+<p class="zapr-m"><b>Pytanie o Twój projekt?</b> Zadzwoń: <a href="tel:+48697333390">697 333 390</a> albo napisz przez <a href="#zapytanie">formularz</a>.</p>
 <section class="temat" id="s-4" aria-labelledby="s-4-t">
 <h2 id="s-4-t"><span class="rz">IV</span>Pytania dotyczące zakresu przedmiotowego dofinansowania</h2>
 <div class="pyt">
@@ -419,6 +458,7 @@ mark{background:#FFE27A;color:inherit;padding:0 1px}
 <details id="p-68"><summary><span class="nr">68</span><span class="q">Mam pytanie odnośnie zakupu urządzenia z punktu 22 Katalogu działań. Co w sytuacji, gdy inwestycja wyniesie więcej niż 60 000 zł? Czy wniosek nie zostanie odrzucony z tego powodu? Czy musimy kupić urządzenie za 60 000 zł, czy możemy kupić np. za 70 000 zł, a dofinansowanie będzie do kwoty 60 000 zł?</span></summary><div class="odp"><p>Sposób obliczenia kwoty dofinansowania – zarówno w przypadku punktów z Katalogu działań, które podlegają ograniczeniom kwotowym, jak i tych bez ograniczeń – zawiera „Instrukcja wypełniania i wysyłania wniosku o dofinansowanie” (załącznik nr 3 do Regulaminu konkursu).</p><p>W przypadku urządzeń, na które nie ma ograniczeń, kwota dofinansowania każdorazowo powinna być obliczona według wzoru:</p><p><strong>Wartość urządzenia x 80 % dofinansowania = kwota dofinansowania</strong></p><p>W przypadku urządzeń z ograniczeniami, jeżeli po zastosowaniu powyższego wzoru, kwota dofinansowania przekracza maksymalną kwotę wskazaną dla tego działania w Katalogu działań, musisz ją zmniejszyć do kwoty ograniczenia. Nie ma znaczenia liczba urządzeń zakupionych w ramach tego punktu Katalogu działań. Łączny poziom dofinansowania wszystkich działań z tego punktu nie może przekroczyć kwoty ograniczenia.</p><p>Ograniczenia kwotowe podane w Katalogu działań należy rozumieć w ten sposób, że dofinansowanie w tym zakresie nie będzie wyższe niż podane w Katalogu, ale może być niższe. Uzależnione jest to od kosztów inwestycji oraz obliczonego od tej wartości 80% możliwego dofinansowania.</p></div></details>
 <details id="p-69"><summary><span class="nr">69</span><span class="q">Jakiej wysokości wkładem własnym musi dysponować wnioskodawca, żeby otrzymać dofinansowanie na zakup urządzenia poprawiającego bezpieczeństwo i higienę pracy?</span></summary><div class="odp"><p>W Regulaminie konkursu szczegółowo określiliśmy maksymalne kwoty dofinansowania (§ 5 Regulaminu konkursu), które wynoszą 80% wartości projektu, nie więcej niż 350 tys. zł.</p><p>Wnioskodawca musi posiadać wkład własny na pokrycie różnicy pomiędzy wartością projektu a kwotą dofinansowania. Ponadto musi dysponować środkami własnymi na realizację projektu w wysokości II transzy dofinansowania do czasu jej wypłaty.</p><p>Przykład:</p><p>Wartość inwestycji wynosi 100 000,00 zł.</p><p><strong>Kwota otrzymanego dofinansowania to 100 000,00 zł x 80% = 80 000,00 zł. </strong></p><p>Kwota wypłaty I transzy wynosi 80 000,00 zł x 60% = 48 000,00 zł.</p><p>100 000,00 zł – 48 000,00 zł = 52 000,00 zł.</p><p>Wnioskodawca musi posiadać środki własne na realizację projektu w wysokości 52 000,00 zł oraz środki na koszty związane z realizacją projektu, które nie podlegają dofinansowaniu.</p><p>II transzę wnioskodawca otrzyma w ciągu 30 dni po zatwierdzeniu odbioru projektu przez ZUS.</p></div></details>
 </div></section>
+<p class="zapr-m"><b>Pytanie o Twój projekt?</b> Zadzwoń: <a href="tel:+48697333390">697 333 390</a> albo napisz przez <a href="#zapytanie">formularz</a>.</p>
 <section class="temat" id="s-7" aria-labelledby="s-7-t">
 <h2 id="s-7-t"><span class="rz">VII</span>Pytania dotyczące załączników do formularza wniosku o dofinansowanie projektu</h2>
 <div class="pyt">
@@ -472,6 +512,7 @@ mark{background:#FFE27A;color:inherit;padding:0 1px}
 <details id="p-109"><summary><span class="nr">109</span><span class="q">Obecnie składane wnioski dotyczą projektów, które będą realizowane w przyszłym roku. Ciężko będzie utrzymać ceny z ofert, przygotowanych w dniu dzisiejszym w przyszłym roku. Co w takiej sytuacji?</span></summary><div class="odp"><p>Zawarta we wniosku kwota dofinansowania nie może ulec zwiększeniu ani na etapie trwania procedury konkursowej, ani po zawarciu umowy o dofinansowanie.</p><p>Wnioskodawca ponosi ryzyko związane ze wzrostem cen.</p></div></details>
 <details id="p-110"><summary><span class="nr">110</span><span class="q">W jaki sposób powinny być księgowane przedmioty zakupione z dofinansowania z programu poprawy bezpieczeństwa pracy? Czy można zakupy te wliczyć w koszty prowadzenia działalności?</span></summary><div class="odp"><p>Zgodnie z § 13 ust. 8 Regulaminu konkursu ZUS odpowiada na pytania dotyczące Konkursu. Pytanie z zakresu księgowości powinno być skierowane do osób zajmujących się sprawami finansowymi przedsiębiorstwa.</p></div></details>
 </div></section>
+<p class="zapr-m"><b>Pytanie o Twój projekt?</b> Zadzwoń: <a href="tel:+48697333390">697 333 390</a> albo napisz przez <a href="#zapytanie">formularz</a>.</p>
 <section class="temat" id="s-10" aria-labelledby="s-10-t">
 <h2 id="s-10-t"><span class="rz">X</span>Pytania dotyczące odwołania do Komisji Odwoławczej</h2>
 <div class="pyt">
@@ -480,17 +521,23 @@ mark{background:#FFE27A;color:inherit;padding:0 1px}
 <details id="p-113"><summary><span class="nr">113</span><span class="q">Czy istnieje jakakolwiek możliwość zakwestionowania/<wbr>wzruszenia/<wbr>zmiany oceny merytorycznej projektu?</span></summary><div class="odp"><p>Zgodnie z art. 37e ust. 7 ustawy wypadkowej oceny merytorycznej projektów dokonują eksperci Centralnego Instytutu Ochrony Pracy – Państwowego Instytutu Badawczego (CIOP-PIB). Jest to podmiot niezależny od ZUS, zatrudnia osoby wykwalifikowane w zakresie działań na rzecz poprawy i bezpieczeństwa pracy. Zgodnie z § 10 ust. 2 Regulaminu konkursu od oceny merytorycznej wniosku nie przysługuje odwołanie do Komisji Odwoławczej.</p></div></details>
 </div></section>
   <p class="brak" id="brak">Nie znaleźliśmy takiego pytania. Prosimy zadzwonić: <a href="tel:+48697333390">+48 697 333 390</a> albo napisać na <a href="mailto:dotacje@energiabhp.pl">dotacje@energiabhp.pl</a>, odpowiemy.</p>
-  <aside class="cta rama" style="--rk:#4CC488">
-   <div>
-    <h2>Nie wiesz, czy Twój projekt się kwalifikuje?</h2>
-    <p>Zadzwoń lub napisz: sprawdzimy, czy stanowiska pracy i planowane zakupy mieszczą się w katalogu działań ZUS, i powiemy, jakich pomiarów i dokumentów potrzeba. Wniosek przygotujemy i rozliczymy za Państwa.</p>
-   </div>
-   <div class="akc">
-    <a class="btn btn-b" href="./#kontakt">Zapytaj o dotację</a>
-    <a class="ttel" href="tel:+48697333390">+48 697 333 390</a>
-   </div>
-  </aside>
+<aside class="zapr" aria-labelledby="zapytanie-t">
+ <div>
+  <h2 id="zapytanie-t">Masz pytanie o swój projekt?</h2>
+  <p class="op">Zadzwoń albo zostaw kontakt, oddzwonimy. Sprawdzimy, czy planowane zakupy mieszczą się w katalogu działań ZUS, i powiemy, jakich pomiarów i dokumentów będzie potrzeba.</p>
+  <a class="tz" href="tel:+48697333390">+48 697 333 390<small>pon.-pt. 8:00-16:00, dotacje@energiabhp.pl</small></a>
  </div>
+ <form class="form" id="zapytanie" novalidate>
+  <div class="pola">
+   <div><label for="zapytanie-imie">Imię i nazwisko</label><input id="zapytanie-imie" name="imie" autocomplete="name"></div>
+   <div><label for="zapytanie-tel">Telefon lub e-mail</label><input id="zapytanie-tel" name="kontakt" autocomplete="tel"></div>
+   <div class="cale"><label for="zapytanie-wiad">Czego dotyczy pytanie?</label><textarea id="zapytanie-wiad" name="wiadomosc" placeholder="Np. wentylacja hali, wózek widłowy, termin naboru"></textarea></div>
+   <label class="zgoda cale"><input type="checkbox" name="zgoda"> Wyrażam zgodę na kontakt w sprawie zapytania.</label>
+  </div>
+  <button class="btn btn-z" type="submit">Wyślij pytanie</button>
+  <p class="info">Formularz pokazowy, na podglądzie nie wysyła wiadomości.</p>
+ </form>
+</aside> </div>
 </div>
 </main>
 <footer class="stopka">
@@ -534,6 +581,7 @@ function filtr(){var q=norm(inp.value.trim()),n=0,sl=q.split(/\s+/).filter(Boole
  ile.textContent=sl.length?('Znaleziono: '+n+' '+odm(n)):(D.length+' pytań');brak.style.display=n?'none':'block'}
 var otw=false;rb.addEventListener('click',function(){otw=!otw;D.forEach(function(d){if(!d.hidden)d.open=otw});rb.textContent=otw?'Zwiń wszystkie':'Rozwiń wszystkie'});
 function zHash(){var h=location.hash;if(/^#p-\d+$/.test(h)){var d=document.querySelector(h);if(d){d.hidden=false;d.open=true;d.scrollIntoView({block:'start',behavior:'instant'})}}}
+[].forEach.call(document.querySelectorAll('form.form:not(#formularz)'),function(f){f.addEventListener('submit',function(e){e.preventDefault();var i=f.querySelector('.info');if(i){i.textContent='To formularz pokazowy. Na docelowej stronie zapytanie trafi na adres dotacje@energiabhp.pl.';i.style.color='#00843D'}})});
 window.addEventListener('hashchange',zHash);zHash();window.addEventListener('load',function(){setTimeout(zHash,50)});
 var L=[].slice.call(document.querySelectorAll('.spis a'));
 if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){L.forEach(function(a){a.classList.toggle('akt',a.getAttribute('href')==='#'+x.target.id)})}})},{rootMargin:'-160px 0px -60% 0px'});T.forEach(function(t){io.observe(t)})}

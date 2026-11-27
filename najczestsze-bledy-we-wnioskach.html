@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow" data-podglad>
+<title>Najczęstsze błędy we wnioskach o dotację z ZUS na BHP | Energia BHP</title>
+<meta name="description" content="Najczęstsze błędy we wnioskach o dotację z ZUS na BHP i jak ich uniknąć: katalog działań, ocena ryzyka i pomiary, oferty, podpis, zakupy przed umową, rozliczenie i trwałość. Na podstawie odpowiedzi ZUS.">
+<link rel="canonical" href="https://dotacjezzusu.pl/najczestsze-bledy-we-wnioskach">
+<meta name="theme-color" content="#00843D">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/jost-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/archivo-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+20AC}
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:Archivo;font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/archivo-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013,U+2018-2019,U+201C-201E,U+2026}
+@font-face{font-family:Archivo;font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/archivo-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{--z:#00993F;--zh:#00843D;--zc:#0C110E;--st:#0B0D10;--sz:#EEF0F2;--t:#16201B;--t2:#4A544F;--w:min(1200px,100% - 32px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font:400 17px/1.6 Archivo,system-ui,sans-serif;color:var(--t);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:Jost,Archivo,sans-serif;font-weight:600;line-height:1.12;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(28px,3.6vw,44px)}
+h3{font-size:21px}
+p{margin:0}
+.wr{width:var(--w);margin-inline:auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+/* ramka z logo: trzy boki pełne, lewy bok z przerwą */
+.rama{position:relative}
+.rama::before{content:"";position:absolute;inset:calc(var(--o,14px) * -1);border:3px solid var(--rk,var(--z));border-left:0;pointer-events:none;
+background:linear-gradient(var(--rk,var(--z)),var(--rk,var(--z))) left top/3px 24% no-repeat,linear-gradient(var(--rk,var(--z)),var(--rk,var(--z))) left bottom/3px 24% no-repeat}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;font:600 17px/1 Jost,sans-serif;text-decoration:none;border:0;cursor:pointer;border-radius:0}
+.btn-b{background:#fff;color:var(--t);box-shadow:inset 0 0 0 2px var(--t)}
+.btn-b:hover{background:#EAF6EF}
+.btn-z{background:var(--zh);color:#fff}
+.btn-z:hover{background:var(--zc)}
+/* pasek podglądu */
+.podglad{background:var(--sz);color:var(--t2);font-size:13.5px;line-height:1.4;padding:8px 0;text-align:center}
+/* nagłówek */
+.nag{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid #DDE2E0}
+.nag .wr{display:flex;align-items:center;gap:24px;min-height:72px}
+.logo{display:block;width:172px;color:var(--t);flex:none}
+.logo svg{display:block;width:100%;height:auto}
+.menu{display:flex;gap:4px;margin-left:auto}
+.menu a{padding:10px 11px;text-decoration:none;font:500 16px/1.2 Jost,sans-serif;color:var(--t)}
+.menu a:hover{color:var(--zh)}
+.tel{font:600 17px/1 Jost,sans-serif;text-decoration:none;color:var(--zh);white-space:nowrap;padding:10px 0 10px 14px;border-left:3px solid var(--z)}
+.mbtn{display:none}
+@media (max-width:1079px){
+ .menu{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;flex-direction:column;gap:0;padding:8px 16px 18px;border-bottom:1px solid #DDE2E0;box-shadow:0 18px 30px rgba(17,24,21,.12)}
+ .menu.otw{display:flex}
+ .menu a{padding:14px 4px;font-size:19px;border-bottom:1px solid #EEF0F2}
+ .tel{margin-left:auto}
+ .mbtn{display:inline-flex;align-items:center;gap:8px;background:none;border:2px solid var(--t);min-height:42px;padding:0 12px;font:600 15px/1 Jost,sans-serif;color:var(--t);cursor:pointer}
+}
+@media (max-width:520px){.logo{width:138px}.tel{font-size:15px;padding-left:10px}.nag .wr{gap:12px;min-height:64px}}
+@media (max-width:370px){.tel span{display:none}}
+/* hero */
+.hero{background:linear-gradient(180deg,#fff 0%,#F1F8F3 100%);color:var(--t);padding:56px 0 72px;overflow:hidden}
+.hero .wr{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:64px;align-items:center}
+.hero h1{font-size:clamp(28px,4.1vw,54px);max-width:16ch}
+.lead{font-size:clamp(17px,1.5vw,20px);margin-top:22px;max-width:36em;color:var(--t2)}
+.hero .akcja{display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px;margin-top:32px}
+.hero .akcja a.ttel{font:600 19px/1.2 Jost,sans-serif;text-decoration:none;color:var(--t)}
+.hero .akcja a.ttel small{display:block;font:400 14px/1.3 Archivo,sans-serif;color:var(--t2)}
+.hero .sukces{margin-top:34px;padding-top:18px;border-top:1px solid #D3DED7;font-size:15.5px;color:var(--t2);max-width:36em}
+.hero .sukces b{color:var(--zh)}
+.zdj{--rk:var(--z);--o:18px;position:relative;justify-self:end;width:min(560px,100%);margin:18px 18px 18px 0}
+.zdj .glowne{width:100%;aspect-ratio:3/2;object-fit:cover;background:#0E3B27}
+.zdj .male{position:absolute;left:-40px;bottom:-46px;width:46%;max-width:260px;aspect-ratio:3/2;object-fit:cover;border:6px solid #fff;background:#0E3B27}
+@media (max-width:999px){
+ .hero{padding:36px 0 54px}
+ .hero .wr{grid-template-columns:1fr;gap:44px}
+ .zdj{justify-self:start;width:calc(100% - 22px);margin:14px 0 14px 8px;--o:12px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+ .zdj .glowne,.zdj .male{position:static;width:100%;max-width:none;border:0;aspect-ratio:4/3}
+}
+/* sekcje */
+.sek{padding:clamp(64px,8vw,112px) 0}
+.szara{background:var(--sz)}
+.glowa{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 64px;align-items:end;margin-bottom:44px}
+.glowa p{color:var(--t2);font-size:18px;max-width:34em}
+@media (max-width:860px){.glowa{grid-template-columns:1fr;margin-bottom:32px}}
+.dalej{display:inline-block;margin-top:34px;font:600 17px/1.3 Jost,sans-serif;color:var(--zh);text-decoration:none;border-bottom:2px solid var(--z);padding-bottom:3px}
+.dalej:hover{color:var(--zc)}
+/* na co - karty przesuwane */
+.karty{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.karta{background:#fff}
+.karta img{width:100%;aspect-ratio:3/2;object-fit:cover;background:var(--sz)}
+.karta h3{margin:18px 0 8px}
+.karta p{color:var(--t2);font-size:16px}
+@media (max-width:999px){
+ .karty{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;margin-inline:-16px;padding:0 16px 14px;scroll-padding-inline:16px;scrollbar-width:thin;cursor:grab}
+ .karta{flex:0 0 min(230px,70vw);scroll-snap-align:start}
+}
+.przes{display:none;font-size:14px;color:var(--t2);margin-top:6px}
+@media (max-width:999px){.przes{display:block}}
+/* warunki */
+.warunki{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px 80px;align-items:start}
+.warunki .opis p{color:var(--t2);font-size:18px;margin-top:20px;max-width:30em}
+.lista{list-style:none;margin:0;padding:0;counter-reset:w}
+.lista li{counter-increment:w;position:relative;padding:20px 0 20px 64px;border-bottom:1px solid #D3D9D6;font-size:18px}
+.lista li:first-child{border-top:1px solid #D3D9D6}
+.lista li::before{content:counter(w);position:absolute;left:0;top:16px;width:40px;height:40px;display:grid;place-items:center;font:600 18px/1 Jost,sans-serif;color:var(--zh);
+border:3px solid var(--z);border-left:0;background:linear-gradient(var(--z),var(--z)) left top/3px 26% no-repeat,linear-gradient(var(--z),var(--z)) left bottom/3px 26% no-repeat}
+.fakt{margin-top:30px;padding:22px 24px;background:#fff;font-size:17px}
+.fakt b{font-family:Jost,sans-serif;font-weight:600}
+.fakt a,.zrodlo a{color:var(--zh);font-weight:600;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.zrodlo{margin-top:26px;font-size:16px}
+.fakt-s{background:var(--sz);border-left:3px solid var(--zc)}
+@media (max-width:899px){.warunki{grid-template-columns:1fr}}
+/* jak uzyskać */
+.etapy{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px;position:relative}
+.etapy li{position:relative;padding-top:30px}
+.etapy li::before{content:"";position:absolute;left:0;right:-32px;top:0;height:3px;background:var(--z)}
+.etapy li:last-child::before{right:0}
+.etapy li::after{content:"";position:absolute;left:0;top:-9px;width:3px;height:21px;background:var(--z)}
+.etapy .nr{font:500 15px/1 Jost,sans-serif;color:var(--zh)}
+.etapy h3{margin:10px 0 10px}
+.etapy p{color:var(--t2);font-size:16px}
+@media (max-width:999px){.etapy{grid-template-columns:1fr 1fr;gap:44px 24px}.etapy li::before{right:0}}
+@media (max-width:600px){.etapy{grid-template-columns:1fr;gap:30px}.etapy li{padding-top:24px}}
+/* odpłatność */
+.ciemna{background:var(--zc);color:#fff}
+.odpl{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:56px 88px;align-items:center}
+.odpl .lead{color:#D6E9DF;margin-top:20px}
+.punkty{list-style:none;margin:30px 0 0;padding:0}
+.punkty li{padding:16px 0 16px 34px;border-top:1px solid rgba(255,255,255,.2);position:relative;font-size:17.5px}
+.punkty li::before{content:"";position:absolute;left:0;top:25px;width:16px;height:9px;border-left:3px solid #4CC488;border-bottom:3px solid #4CC488;transform:rotate(-45deg)}
+.ciemna .dalej{color:#fff;border-color:#4CC488}
+.odpl .rama{--rk:#4CC488;--o:16px;margin:16px;width:100%;max-width:440px;justify-self:center}
+.odpl .rama img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.odpl .podpis{font-size:15px;color:#BBD8C9;margin-top:30px}
+@media (max-width:899px){.odpl{grid-template-columns:1fr}.odpl .rama{justify-self:start;width:calc(100% - 32px);max-width:220px}}
+/* pytania */
+.pyt{max-width:900px}
+.pyt details{border-bottom:1px solid #D3D9D6}
+.pyt details:first-child{border-top:1px solid #D3D9D6}
+.pyt summary{list-style:none;cursor:pointer;padding:22px 52px 22px 0;position:relative;font:600 clamp(18px,1.6vw,21px)/1.3 Jost,sans-serif}
+.pyt summary::-webkit-details-marker{display:none}
+.pyt summary::after{content:"";position:absolute;right:6px;top:50%;width:14px;height:14px;margin-top:-10px;border-right:3px solid var(--z);border-bottom:3px solid var(--z);transform:rotate(45deg);transition:transform .2s}
+.pyt details[open] summary::after{transform:rotate(-135deg);margin-top:-2px}
+.pyt details p{padding:0 0 24px;color:var(--t2);max-width:46em}
+/* kontakt */
+.kontakt{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:48px 80px;align-items:start}
+.dane{margin-top:26px;font-size:18px}
+.dane p{margin-top:12px}
+.dane .duzy{font:600 clamp(24px,2.6vw,32px)/1.2 Jost,sans-serif;color:var(--zh);text-decoration:none;display:inline-block}
+.dane a{color:var(--zh)}
+.form{background:#fff;padding:clamp(22px,3vw,40px)}
+.form .pola{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form label{display:block;font-size:15px;font-weight:600;margin-bottom:6px}
+.form input,.form textarea{width:100%;font:inherit;font-size:17px;padding:12px 14px;border:1px solid #B9C2BE;border-radius:0;background:#fff;color:var(--t)}
+.form input:focus,.form textarea:focus{outline:3px solid rgba(30,139,87,.35);border-color:var(--z)}
+.form .cale{grid-column:1/-1}
+.form textarea{min-height:120px;resize:vertical}
+.form .zgoda{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--t2);font-weight:400}
+.form .zgoda input{width:20px;height:20px;flex:none;margin-top:2px}
+.form .btn{margin-top:20px;width:100%}
+.form .info{font-size:14px;color:var(--t2);margin-top:12px}
+@media (max-width:899px){.kontakt{grid-template-columns:1fr}}
+@media (max-width:520px){.form .pola{grid-template-columns:1fr}}
+/* stopka */
+.stopka{background:var(--st);color:#B9C4BF;padding:56px 0 28px;font-size:15.5px}
+.stopka .gora{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:32px}
+.stopka .logo{color:#fff;width:180px}
+.stopka h3{font-size:17px;color:#fff;margin-bottom:12px}
+.stopka a{color:#DCE5E1;text-decoration:none}
+.stopka a:hover{color:#fff}
+.stopka ul{list-style:none;margin:0;padding:0}
+.stopka li{margin:6px 0}
+.stopka .dol{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;align-items:center;margin-top:40px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);font-size:14px}
+@media (max-width:760px){.stopka .gora{grid-template-columns:1fr 1fr}.stopka .gora>div:first-child{grid-column:1/-1}}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}html{scroll-behavior:auto}}
+/* liczby */
+.liczby{background:var(--zc);color:#fff;padding:clamp(40px,5vw,64px) 0}
+.liczby dl{margin:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px 40px}
+.liczby dt{font:600 clamp(30px,3.4vw,46px)/1.05 Jost,sans-serif;color:#fff;padding-top:16px;border-top:3px solid var(--z)}
+.liczby dd{margin:10px 0 0;color:#B8C4BE;font-size:15.5px;max-width:22em}
+@media (max-width:899px){.liczby dl{grid-template-columns:1fr 1fr}}
+@media (max-width:420px){.liczby dl{gap:24px 18px}.liczby dd{font-size:14.5px}}
+/* liczby - treść klienta */
+.liczby .wstep{font-size:clamp(17px,1.5vw,20px);color:#D6E3DC;max-width:52em;line-height:1.6}
+.liczby h2{color:#fff;margin:clamp(32px,4vw,48px) 0 clamp(26px,3vw,36px)}
+.liczby dl{grid-template-columns:repeat(6,minmax(0,1fr))}
+.liczby dl>div{grid-column:span 2}
+.liczby dl>div.duza{grid-column:span 3}
+.liczby dd b{color:#fff;font-weight:600}
+@media (max-width:899px){.liczby dl{grid-template-columns:1fr 1fr}.liczby dl>div,.liczby dl>div.duza{grid-column:auto}.liczby dl>div:last-child{grid-column:1/-1}}
+/* nabór */
+.nabor{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:28px 80px;align-items:start}
+.nabor .tresc p{color:var(--t2);font-size:18px}
+.nabor .tresc p+p{margin-top:16px}
+.fakt-z{background:#EAF6EF;border-left:3px solid var(--z)}
+@media (max-width:899px){.nabor{grid-template-columns:1fr}}
+/* dlaczego */
+.powody{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.powody article{padding:28px 26px 30px;background:var(--sz);border-top:3px solid var(--z)}
+.powody h3{margin-bottom:12px}
+.powody p{color:var(--t2);font-size:16.5px}
+@media (max-width:899px){.powody{grid-template-columns:1fr;gap:18px}}
+.etapy{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:48px}
+.etapy li:nth-child(3n)::before{right:0}
+@media (max-width:999px){.etapy{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.etapy{grid-template-columns:1fr}}
+.punkty li b{color:#fff}
+.odpl .gwarancja{--rk:#4CC488;--o:14px;margin:14px;max-width:480px;padding:30px 28px;background:rgba(255,255,255,.04)}
+.odpl .gwarancja h3{color:#fff;margin-bottom:14px}
+.odpl .gwarancja p{color:#D6E9DF;font-size:16.5px}
+@media (max-width:899px){.odpl .gwarancja{width:calc(100% - 28px);max-width:none}}
+section[id]{scroll-margin-top:72px}
+
+
+/* oś czasu konkursu */
+.os{list-style:none;margin:0;padding:0;position:relative;max-width:1000px}
+.os::before{content:"";position:absolute;left:11px;top:8px;bottom:8px;width:3px;background:var(--z)}
+.os li{position:relative;padding:0 0 38px 52px}
+.os li:last-child{padding-bottom:0}
+.os li::before{content:"";position:absolute;left:0;top:4px;width:25px;height:25px;background:#fff;border:3px solid var(--z);border-left-color:transparent}
+.os .kiedy{display:inline-block;font:600 14px/1.2 Jost,sans-serif;letter-spacing:.04em;text-transform:uppercase;color:var(--zh);margin-bottom:6px}
+.os h3{margin-bottom:8px}
+.os .co{color:var(--t2);font-size:17px;max-width:44em}
+.os .rola{display:flex;gap:12px;align-items:flex-start;margin-top:12px;padding:14px 16px;background:#EAF6EF;font-size:16px;max-width:46em}
+.szara .os .rola{background:#fff}
+.os .tag,.os-leg .tag{flex:none;font:600 13px/1 Jost,sans-serif;text-transform:uppercase;letter-spacing:.05em;padding:6px 8px;background:var(--zh);color:#fff}
+.os .tag.ws,.os-leg .tag.ws{background:#fff;color:var(--zh);box-shadow:inset 0 0 0 2px var(--zh)}
+.os .tag.fi,.os-leg .tag.fi{background:var(--t);color:#fff}
+@media (max-width:640px){.os .rola{flex-direction:column;gap:8px}.os li{padding-left:44px}}
+.os-leg{display:flex;flex-wrap:wrap;gap:10px 22px;margin:0 0 32px;font-size:15px;color:var(--t2)}
+.os-leg span{display:inline-flex;gap:8px;align-items:center}
+@media (min-width:1000px){.os-wr{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:64px;align-items:start}.os-wr .glowa{display:block;position:sticky;top:110px}.os-wr .glowa p{margin-top:18px}}
+/* zaproszenie do kontaktu */
+.zapr{margin-top:72px;background:var(--zc);color:#fff;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:28px 48px;padding:clamp(26px,4vw,48px);align-items:start}
+.zapr h2{font-size:clamp(24px,2.8vw,34px)}
+.zapr .op{color:#C9D6CF;margin-top:12px;max-width:34em}
+.zapr .tz{display:inline-block;margin-top:22px;font:600 clamp(22px,2.4vw,28px)/1.2 Jost,sans-serif;color:#fff;text-decoration:none;border-left:3px solid #4CC488;padding-left:14px}
+.zapr .tz small{display:block;font:400 14px/1.4 Archivo,sans-serif;color:#C9D6CF}
+.zapr .form{color:var(--t)}
+.zapr .form textarea{min-height:96px}
+@media (max-width:860px){.zapr{grid-template-columns:1fr}}
+@media (max-width:520px){.zapr .form .pola{grid-template-columns:1fr}}
+.zapr-m{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin:28px 0 0;padding:16px 20px;background:#EAF6EF;border-left:3px solid var(--z);font-size:16.5px}
+.zapr-m a{color:var(--zh);font-weight:600}
+/* zapowiedź błędów na głównej */
+.bl-lista{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 40px}
+.bl-lista li{position:relative;padding:16px 0 16px 34px;border-top:1px solid #D3D9D6;font-size:17px}
+.bl-lista li::before{content:"";position:absolute;left:2px;top:23px;width:14px;height:3px;background:#C0392B;box-shadow:0 0 0 0}
+.bl-lista b{font-family:Jost,sans-serif;font-weight:600}
+@media (max-width:760px){.bl-lista{grid-template-columns:1fr}}
+
+.ph{background:linear-gradient(180deg,#fff 0%,#F1F8F3 100%);padding:44px 0 52px;border-bottom:1px solid #DDE2E0}
+.okr{font-size:15px;color:var(--t2);margin-bottom:18px}
+.okr a{color:var(--zh)}
+.ph h1{font-size:clamp(30px,4.2vw,50px);max-width:22ch}
+.ph .lead{max-width:46em}
+.menu a[aria-current]{color:var(--zh);box-shadow:inset 0 -3px 0 var(--z)}
+.uklad{display:grid;grid-template-columns:300px minmax(0,1fr);gap:56px;padding:48px 0 88px}
+.spis{position:sticky;top:96px;align-self:start;max-height:calc(100vh - 120px);overflow:auto}
+.spis h2{font-size:18px;margin-bottom:12px}
+.spis ol{margin:0;padding:0 0 0 22px;font-size:15px;line-height:1.35}
+.spis li{margin:0 0 9px;color:var(--zh)}
+.spis a{color:var(--t2);text-decoration:none}
+.spis a:hover{color:var(--t)}
+@media (max-width:999px){.uklad{grid-template-columns:minmax(0,1fr);gap:28px;padding-top:28px}.spis{position:static;max-height:none}}
+.art{max-width:50em}
+.bg+.bg,.zapr-m+.bg{margin-top:56px}
+.bg h2{font-size:clamp(26px,3vw,36px);padding-bottom:12px;border-bottom:3px solid var(--z)}
+.bg-w{color:var(--t2);font-size:18px;margin:16px 0 8px}
+.bl{padding:26px 0;border-bottom:1px solid #D3D9D6;scroll-margin-top:90px}
+.bl h3{display:flex;gap:14px;align-items:baseline;font-size:clamp(20px,2vw,24px);margin-bottom:12px}
+.bl h3 span{flex:none;min-width:34px;font-size:.8em;color:#C0392B}
+.bl p{color:#2A3530;margin-top:10px}
+.bl .jak{background:#EAF6EF;padding:12px 16px;border-left:3px solid var(--z)}
+.bl .bz{font-size:14.5px;color:var(--t2)}
+.bl .bz a,.zr a,.art a{color:var(--zh);font-weight:600}
+.zr{margin-top:26px;padding:18px 22px;background:#fff;border-left:3px solid var(--z);font-size:16px;max-width:56em}
+.zr a{overflow-wrap:anywhere}
+.lista-k{margin:56px 0 0;padding:28px 30px;background:var(--sz)}
+.lista-k h2{font-size:clamp(22px,2.4vw,28px);margin-bottom:14px}
+.lista-k ul{margin:0;padding-left:22px}
+.lista-k li{margin:6px 0}
+</style>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","@id":"https://dotacjezzusu.pl/najczestsze-bledy-we-wnioskach#artykul","url":"https://dotacjezzusu.pl/najczestsze-bledy-we-wnioskach","mainEntityOfPage":"https://dotacjezzusu.pl/najczestsze-bledy-we-wnioskach","headline":"Najczęstsze błędy we wnioskach o dotację z ZUS na BHP i jak ich uniknąć","description":"Błędy, przez które wnioski w konkursie ZUS na poprawę bezpieczeństwa i higieny pracy tracą szansę na dofinansowanie, i sposoby, jak ich uniknąć.","inLanguage":"pl","datePublished":"2026-11-27","dateModified":"2026-11-27","author":{"@type":"Organization","name":"Energia BHP Usługi Doradcze i Szkoleniowe Leszek Szymczak","url":"https://dotacjezzusu.pl/"},"publisher":{"@type":"Organization","name":"Energia BHP","url":"https://dotacjezzusu.pl/"},"about":"Konkurs ZUS - dofinansowanie działań płatnika składek na poprawę bezpieczeństwa i higieny pracy","citation":"https://bip.zus.pl/konkurs-dofinansowanie-dzialan-platnika-skladek-na-poprawe-bezpieczenstwa-i-higieny-pracy/konkurs-202601","hasPart":[{"@type":"WebPageElement","name":"Wniosek o sprzęt spoza Katalogu działań"},{"@type":"WebPageElement","name":"Brak dokumentów, które potwierdzają zagrożenie"},{"@type":"WebPageElement","name":"Pomiary bez akredytacji albo nieaktualne"},{"@type":"WebPageElement","name":"Projekt dla stanowisk, których jeszcze nie ma"},{"@type":"WebPageElement","name":"Projekt tylko doradczy albo zła kolejność działań doradczych"},{"@type":"WebPageElement","name":"Zaległości w ZUS lub urzędzie skarbowym"},{"@type":"WebPageElement","name":"Oferta przykładowa zamiast konkretnej"},{"@type":"WebPageElement","name":"Sprzęt, który nie jest fabrycznie nowy"},{"@type":"WebPageElement","name":"Zły podpis albo brak liczby kontrolnej"},{"@type":"WebPageElement","name":"Nieprawidłowy kod PKD lub liczba ubezpieczonych"},{"@type":"WebPageElement","name":"Brak dokumentu do obiektu pod innym adresem"},{"@type":"WebPageElement","name":"Koszty, których ZUS nie pokryje"},{"@type":"WebPageElement","name":"Przeoczone wezwanie z ZUS"},{"@type":"WebPageElement","name":"Zakup przed podpisaniem umowy"},{"@type":"WebPageElement","name":"Zmiany w projekcie bez zgody ZUS"},{"@type":"WebPageElement","name":"Inna metoda oceny w rozliczeniu niż we wniosku"},{"@type":"WebPageElement","name":"Złamanie okresu trwałości"}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Strona główna","item":"https://dotacjezzusu.pl/"},{"@type":"ListItem","position":2,"name":"Najczęstsze błędy we wnioskach","item":"https://dotacjezzusu.pl/najczestsze-bledy-we-wnioskach"}]}]</script>
+</head>
+<body>
+<div class="podglad">Podgląd nowej strony dotacjezzusu.pl. Podstrona o najczęstszych błędach we wnioskach.</div>
+<header class="nag">
+ <div class="wr">
+  <a class="logo" href="./" aria-label="Energia BHP - strona główna"><svg viewBox="9 31 205 46" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Energia BHP"><g fill="#1e8b57"><g transform="translate(11.63, 66.74)"><g><path d="M 13.84 -21.46 L 13.84 -17.18 L 6.45 -17.18 L 6.45 -12.90 L 13.53 -12.90 L 13.53 -8.60 L 6.45 -8.60 L 6.45 -4.29 L 13.84 -4.29 L 13.84 0 L 1.56 0 L 1.56 -21.46 Z M 13.84 -21.46 "/></g></g></g><g fill="#1e8b57"><g transform="translate(29.33, 66.74)"><g><path d="M 6.45 -13.32 L 6.45 0 L 1.56 0 L 1.56 -21.46 L 6.45 -21.46 L 15 -8.14 L 15.04 -8.14 L 15.04 -21.46 L 19.93 -21.46 L 19.93 0 L 15.04 0 L 6.51 -13.32 Z M 6.45 -13.32 "/></g></g></g><g fill="#1e8b57"><g transform="translate(53.43, 66.74)"><g><path d="M 13.84 -21.46 L 13.84 -17.18 L 6.45 -17.18 L 6.45 -12.90 L 13.53 -12.90 L 13.53 -8.60 L 6.45 -8.60 L 6.45 -4.29 L 13.84 -4.29 L 13.84 0 L 1.56 0 L 1.56 -21.46 Z M 13.84 -21.46 "/></g></g></g><g fill="#1e8b57"><g transform="translate(71.13, 66.74)"><g><path d="M 1.56 -21.46 L 9.23 -21.46 C 11.30 -21.46 12.99 -20.91 14.29 -19.81 C 15.59 -18.71 16.25 -17.14 16.25 -15.09 C 16.25 -13.51 15.85 -12.19 15.06 -11.12 C 14.26 -10.06 13.19 -9.31 11.84 -8.87 L 19.23 0 L 13.01 0 L 6.45 -8.48 L 6.45 0 L 1.56 0 Z M 6.45 -11.95 L 7.03 -11.95 C 7.47 -11.95 7.85 -11.95 8.17 -11.96 C 8.48 -11.98 8.83 -12.05 9.23 -12.15 C 9.64 -12.25 9.96 -12.40 10.20 -12.59 C 10.44 -12.78 10.64 -13.07 10.82 -13.43 C 11.00 -13.80 11.09 -14.24 11.09 -14.76 C 11.09 -15.28 11.00 -15.72 10.82 -16.09 C 10.64 -16.45 10.44 -16.73 10.20 -16.92 C 9.96 -17.10 9.64 -17.25 9.23 -17.35 C 8.83 -17.46 8.48 -17.52 8.17 -17.54 C 7.85 -17.56 7.47 -17.57 7.03 -17.57 L 6.45 -17.57 Z M 6.45 -11.95 "/></g></g></g><g fill="#1e8b57"><g transform="translate(92.36, 66.74)"><g><path d="M 20.98 -12.03 L 20.98 -7.35 C 20.42 -4.81 19.20 -2.89 17.32 -1.57 C 15.46 -0.26 13.37 0.39 11.06 0.39 C 8.16 0.39 5.69 -0.69 3.65 -2.85 C 1.61 -5.03 0.59 -7.65 0.59 -10.71 C 0.59 -13.84 1.58 -16.47 3.57 -18.62 C 5.57 -20.78 8.07 -21.85 11.06 -21.85 C 14.55 -21.85 17.31 -20.64 19.34 -18.20 L 16.14 -14.68 C 14.99 -16.51 13.39 -17.43 11.34 -17.43 C 9.83 -17.43 8.54 -16.78 7.48 -15.46 C 6.42 -14.16 5.89 -12.58 5.89 -10.71 C 5.89 -8.89 6.42 -7.33 7.48 -6.04 C 8.54 -4.75 9.83 -4.10 11.34 -4.10 C 12.59 -4.10 13.67 -4.48 14.60 -5.23 C 15.54 -5.99 16.01 -7 16.01 -8.25 L 11.06 -8.25 L 11.06 -12.03 Z M 20.98 -12.03 "/></g></g></g><g fill="#1e8b57"><g transform="translate(116.54, 66.74)"><g><path d="M 6.45 -21.46 L 6.45 0 L 1.56 0 L 1.56 -21.46 Z M 6.45 -21.46 "/></g></g></g><g fill="#1e8b57"><g transform="translate(127.16, 66.74)"><g><path d="M 12.46 -21.46 L 21.14 0 L 15.87 0 L 14.29 -4.29 L 6.12 -4.29 L 4.53 0 L -0.73 0 L 7.93 -21.46 Z M 12.62 -8.59 L 10.23 -14.84 L 10.17 -14.84 L 7.78 -8.59 Z M 12.62 -8.59 "/></g></g></g><g fill="currentColor"><g transform="translate(157.38, 62.08)" fill="currentColor"><g fill="currentColor"><path d="M 1.48 0 L 1.48 -16.59 L 7.29 -16.59 C 9.30 -16.59 10.83 -16.20 11.87 -15.43 C 12.91 -14.66 13.43 -13.53 13.43 -12.04 C 13.43 -11.23 13.22 -10.51 12.81 -9.89 C 12.39 -9.27 11.81 -8.82 11.06 -8.53 C 11.91 -8.32 12.58 -7.89 13.07 -7.25 C 13.56 -6.60 13.81 -5.81 13.81 -4.87 C 13.81 -3.28 13.30 -2.07 12.28 -1.25 C 11.26 -0.42 9.82 -0.00 7.93 0 Z M 4.90 -7.21 L 4.90 -2.75 L 7.82 -2.75 C 8.62 -2.75 9.25 -2.93 9.70 -3.31 C 10.16 -3.69 10.39 -4.22 10.39 -4.90 C 10.39 -6.42 9.60 -7.19 8.03 -7.21 Z M 4.90 -9.64 L 7.43 -9.64 C 9.15 -9.67 10.01 -10.35 10.01 -11.70 C 10.01 -12.45 9.79 -12.99 9.35 -13.32 C 8.92 -13.66 8.23 -13.82 7.29 -13.82 L 4.90 -13.82 Z M 4.90 -9.64 " fill="currentColor"/></g></g></g><g fill="currentColor"><g transform="translate(174.61, 62.08)" fill="currentColor"><g fill="currentColor"><path d="M 14.98 0 L 11.56 0 L 11.56 -7.10 L 4.90 -7.10 L 4.90 0 L 1.48 0 L 1.48 -16.59 L 4.90 -16.59 L 4.90 -9.87 L 11.56 -9.87 L 11.56 -16.59 L 14.98 -16.59 Z M 14.98 0 " fill="currentColor"/></g></g></g><g fill="currentColor"><g transform="translate(193.44, 62.08)" fill="currentColor"><g fill="currentColor"><path d="M 4.90 -5.84 L 4.90 0 L 1.48 0 L 1.48 -16.59 L 7.95 -16.59 C 9.20 -16.59 10.29 -16.36 11.23 -15.90 C 12.17 -15.45 12.91 -14.81 13.42 -13.96 C 13.92 -13.12 14.18 -12.17 14.18 -11.10 C 14.18 -9.47 13.62 -8.18 12.51 -7.25 C 11.39 -6.31 9.86 -5.84 7.90 -5.84 Z M 4.90 -8.60 L 7.95 -8.60 C 8.85 -8.60 9.54 -8.82 10.01 -9.25 C 10.49 -9.67 10.73 -10.28 10.73 -11.07 C 10.73 -11.89 10.49 -12.54 10.01 -13.04 C 9.53 -13.54 8.87 -13.80 8.03 -13.82 L 4.90 -13.82 Z M 4.90 -8.60 " fill="currentColor"/></g></g></g><path stroke-linecap="butt" transform="matrix(0.74, 0, 0, 0.74, 152.91, 34.02)" fill="none" stroke-linejoin="miter" d="M 0.00 1.49 L 80.79 1.49 " stroke="#1e8b57" stroke-width="3"/><path stroke-linecap="butt" transform="matrix(0.74, 0, 0, 0.74, 152.91, 73.06)" fill="none" stroke-linejoin="miter" d="M 0.00 1.49 L 80.79 1.49 " stroke="#1e8b57" stroke-width="3"/><path stroke-linecap="butt" transform="matrix(0, -0.74, 0.74, 0, 210.99, 74.18)" fill="none" stroke-linejoin="miter" d="M 0.00 1.49 L 52.30 1.49 " stroke="#1e8b57" stroke-width="3"/><path stroke-linecap="butt" transform="matrix(0, -0.74, 0.74, 0, 152.91, 75.30)" fill="none" stroke-linejoin="miter" d="M -0.00 1.50 L 12.18 1.50 " stroke="#1e8b57" stroke-width="3"/><path stroke-linecap="butt" transform="matrix(0, -0.74, 0.74, 0, 152.91, 44.16)" fill="none" stroke-linejoin="miter" d="M 0.00 1.50 L 12.18 1.50 " stroke="#1e8b57" stroke-width="3"/></svg></a>
+  <nav class="menu" id="menu" aria-label="Menu główne">
+   <a href="./#nabor">Nabór 2027</a>
+   <a href="./#na-co">Na co dotacja</a>
+   <a href="./#warunki">Warunki</a>
+   <a href="./#jak">Jak uzyskać</a>
+   <a href="./#odplatnosc">Odpłatność</a>
+   <a href="pytania-i-odpowiedzi.html">Pytania</a>
+   <a href="./#kontakt">Kontakt</a>
+  </nav>
+  <a class="tel" href="tel:+48697333390"><span>tel. </span>697 333 390</a>
+  <button class="mbtn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+ </div>
+</header>
+
+<main>
+<section class="ph">
+ <div class="wr">
+  <nav class="okr" aria-label="Okruszki"><a href="./">Strona główna</a> / Najczęstsze błędy we wnioskach</nav>
+  <h1>Najczęstsze błędy we wnioskach o dotację z ZUS na BHP i jak ich uniknąć</h1>
+  <p class="lead">Konkurs ZUS ma sztywne zasady, a wniosek ocenia się wyłącznie na podstawie dokumentów. Poniżej 17 błędów, przez które firmy najczęściej tracą szansę na dofinansowanie albo jego część, ułożonych według etapów: od przygotowań, przez wniosek, po rozliczenie.</p>
+  <div class="zr">Opracowanie Energia BHP na podstawie regulaminu konkursu ZUS i oficjalnych odpowiedzi ZUS do konkursu nr 2026.01 (<a href="pytania-i-odpowiedzi.html">katalog pytań i odpowiedzi</a>, <a href="https://bip.zus.pl/konkurs-dofinansowanie-dzialan-platnika-skladek-na-poprawe-bezpieczenstwa-i-higieny-pracy/konkurs-202601" target="_blank" rel="noopener">dokumentacja w BIP ZUS</a>). Przy kolejnej edycji szczegóły mogą się zmienić.</div>
+ </div>
+</section>
+<div class="wr uklad">
+ <nav class="spis" aria-label="Spis błędów">
+  <h2>Spis błędów</h2>
+  <ol><li><a href="#blad-1">Wniosek o sprzęt spoza Katalogu działań</a></li><li><a href="#blad-2">Brak dokumentów, które potwierdzają zagrożenie</a></li><li><a href="#blad-3">Pomiary bez akredytacji albo nieaktualne</a></li><li><a href="#blad-4">Projekt dla stanowisk, których jeszcze nie ma</a></li><li><a href="#blad-5">Projekt tylko doradczy albo zła kolejność działań doradczych</a></li><li><a href="#blad-6">Zaległości w ZUS lub urzędzie skarbowym</a></li><li><a href="#blad-7">Oferta przykładowa zamiast konkretnej</a></li><li><a href="#blad-8">Sprzęt, który nie jest fabrycznie nowy</a></li><li><a href="#blad-9">Zły podpis albo brak liczby kontrolnej</a></li><li><a href="#blad-10">Nieprawidłowy kod PKD lub liczba ubezpieczonych</a></li><li><a href="#blad-11">Brak dokumentu do obiektu pod innym adresem</a></li><li><a href="#blad-12">Koszty, których ZUS nie pokryje</a></li><li><a href="#blad-13">Przeoczone wezwanie z ZUS</a></li><li><a href="#blad-14">Zakup przed podpisaniem umowy</a></li><li><a href="#blad-15">Zmiany w projekcie bez zgody ZUS</a></li><li><a href="#blad-16">Inna metoda oceny w rozliczeniu niż we wniosku</a></li><li><a href="#blad-17">Złamanie okresu trwałości</a></li></ol>
+ </nav>
+ <div class="art">
+<section class="bg" id="etap-1"><h2>Przed złożeniem wniosku</h2><p class="bg-w">Tu zapada najwięcej rozstrzygnięć. Ekspert ZUS ocenia projekt na podstawie dokumentów, a nie wizyty w firmie, więc to, czego nie ma na papierze, dla oceny nie istnieje.</p>
+<article class="bl" id="blad-1"><h3><span>1</span>Wniosek o sprzęt spoza Katalogu działań</h3><p><b>Na czym polega błąd.</b> Firma planuje zakup, który poprawiłby bezpieczeństwo, ale takiego działania nie ma w Katalogu działań inwestycyjnych i doradczych (załącznik nr 4 do regulaminu). ZUS nie robi tu wyjątków: wniosek z działaniem spoza katalogu zostaje wykluczony.</p><p class="jak"><b>Jak go uniknąć.</b> Zacznij od katalogu, a nie od sprzętu. Najpierw ustal, które działanie z katalogu odpowiada zagrożeniu na stanowisku, dopiero potem szukaj urządzenia. Sprawdź też limity kwot przy konkretnych punktach katalogu.</p><p class="bz">Odpowiedzi ZUS: pytania <a href="pytania-i-odpowiedzi.html#p-34">34</a>, <a href="pytania-i-odpowiedzi.html#p-32">32</a>, <a href="pytania-i-odpowiedzi.html#p-61">61</a> w katalogu pytań i odpowiedzi.</p></article>
+<article class="bl" id="blad-2"><h3><span>2</span>Brak dokumentów, które potwierdzają zagrożenie</h3><p><b>Na czym polega błąd.</b> Projekt ma poprawiać warunki na istniejących stanowiskach, więc trzeba wykazać, co dziś jest nie tak. Do wniosku obowiązkowo dołącza się ocenę ryzyka zawodowego każdego stanowiska objętego projektem, a w wielu działaniach także pomiary czynników szkodliwych albo ocenę obciążenia układu mięśniowo-szkieletowego. Opis słowny bez badań nie wystarcza.</p><p class="jak"><b>Jak go uniknąć.</b> Zaplanuj dokumentację z wyprzedzeniem: ocenę ryzyka według uznanej metody, wymagane pomiary i ocenę obciążenia tam, gdzie katalog jej wymaga. Na podstawie tych dokumentów deklaruje się też, jaki poziom wskaźników BHP zostanie osiągnięty po projekcie.</p><p class="bz">Odpowiedzi ZUS: pytania <a href="pytania-i-odpowiedzi.html#p-38">38</a>, <a href="pytania-i-odpowiedzi.html#p-78">78</a>, <a href="pytania-i-odpowiedzi.html#p-89">89</a>, <a href="pytania-i-odpowiedzi.html#p-85">85</a> w katalogu pytań i odpowiedzi.</p></article>
+<article class="bl" id="blad-3"><h3><span>3</span>Pomiary bez akredytacji albo nieaktualne</h3><p><b>Na czym polega błąd.</b> Część pomiarów musi wykonać laboratorium z akredytacją w danym zakresie, np. pomiary oświetlenia elektrycznego. Wynik od osoby z uprawnieniami, ale bez akredytowanego laboratorium, nie spełnia wymogu. Pomiary muszą też odpowiadać obecnym warunkom pracy.</p><p class="jak"><b>Jak go uniknąć.</b> Przed zleceniem pomiarów sprawdź w katalogu, kto może je wykonać, i wybierz laboratorium z wykazu Polskiego Centrum Akredytacji. Pomiary zamawiaj na tyle wcześnie, by zdążyć przed naborem.</p><p class="bz">Odpowiedzi ZUS: pytania <a href="pytania-i-odpowiedzi.html#p-97">97</a>, <a href="pytania-i-odpowiedzi.html#p-95">95</a>, <a href="pytania-i-odpowiedzi.html#p-91">91</a> w katalogu pytań i odpowiedzi.</p></article>
+<article class="bl" id="blad-4"><h3><span>4</span>Projekt dla stanowisk, których jeszcze nie ma</h3><p><b>Na czym polega błąd.</b> Konkurs dotyczy poprawy warunków na stanowiskach, które już funkcjonują. Nowa hala w budowie albo planowana linia produkcyjna nie mogą być przedmiotem projektu.</p><p class="jak"><b>Jak go uniknąć.</b> Obejmij projektem tylko stanowiska działające w dniu złożenia wniosku i opisz ich obecny stan na podstawie pomiarów i oceny ryzyka.</p><p class="bz">Odpowiedzi ZUS: pytania <a href="pytania-i-odpowiedzi.html#p-33">33</a>, <a href="pytania-i-odpowiedzi.html#p-28">28</a> w katalogu pytań i odpowiedzi.</p></article>
+<article class="bl" id="blad-5"><h3><span>5</span>Projekt tylko doradczy albo zła kolejność działań doradczych</h3><p><b>Na czym polega błąd.</b> Dofinansowanie dotyczy przede wszystkim inwestycji. Same usługi doradcze nie są finansowane, a doradztwo z dotacji musi nastąpić po inwestycji i służyć wykazaniu efektu. Badania i oceny potrzebne do uzasadnienia wniosku firma opłaca sama.</p><p class="jak"><b>Jak go uniknąć.</b> Zaplanuj projekt inwestycyjny lub inwestycyjno-doradczy, w którym działania doradcze (np. ponowna ocena ryzyka) są po zakupach. Koszt dokumentacji przed wnioskiem uwzględnij we własnym budżecie.</p><p class="bz">Odpowiedzi ZUS: pytania <a href="pytania-i-odpowiedzi.html#p-35">35</a>, <a href="pytania-i-odpowiedzi.html#p-99">99</a> w katalogu pytań i odpowiedzi.</p></article>
+<article class="bl" id="blad-6"><h3><span>6</span>Zaległości w ZUS lub urzędzie skarbowym</h3><p><b>Na czym polega błąd.</b> Warunkiem udziału jest brak zaległości w składkach i podatkach. Liczy się także aktualność zaświadczenia z urzędu skarbowego: musi być wystawione na NIP wnioskodawcy, według stanu nie wcześniejszego niż miesiąc przed złożeniem wniosku. W spółce cywilnej potrzebne są zaświadczenia dla spółki i każdego wspólnika.</p><p class="jak"><b>Jak go uniknąć.</b> Sprawdź rozliczenia z ZUS i urzędem skarbowym przed naborem. Układ ratalny spłacany zgodnie z umową nie przekreśla udziału. Zaświadczenie zamów w odpowiednim momencie, żeby było aktualne w dniu złożenia wniosku.</p><p class="bz">Odpowiedzi ZUS: pytania <a href="pytania-i-odpowiedzi.html#p-11">11</a>, <a href="pytania-i-odpowiedzi.html#p-31">31</a>, <a href="pytania-i-odpowiedzi.html#p-72">72</a>, <a href="pytania-i-odpowiedzi.html#p-74">74</a> w katalogu pytań i odpowiedzi.</p></article>
+</section>
+<p class="zapr-m"><b>Pytanie o Twój projekt?</b> Zadzwoń: <a href="tel:+48697333390">697 333 390</a> albo napisz przez <a href="#zapytanie">formularz</a>.</p>
+<section class="bg" id="etap-2"><h2>Przy wypełnianiu wniosku i ofert</h2><p class="bg-w">Błędy formalne łatwo przeoczyć, a braki można uzupełnić tylko raz i tylko w zakresie wezwania.</p>
+<article class="bl" id="blad-7"><h3><span>7</span>Oferta przykładowa zamiast konkretnej</h3><p><b>Na czym polega błąd.</b> Oferta handlowa ma dotyczyć dokładnie tego urządzenia, które firma chce kupić, i być wystawiona imiennie na wnioskodawcę. Musi zawierać cenę brutto w złotych, a dokumenty w obcym języku wymagają tłumaczenia przysięgłego. Dane we wniosku muszą zgadzać się z ofertą.</p><p class="jak"><b>Jak go uniknąć.</b> Poproś dostawców o indywidualne oferty z elementami wymaganymi w regulaminie. Przed wysłaniem porównaj kwoty i nazwy urządzeń w ofercie z danymi we wniosku.</p><p class="bz">Odpowiedzi ZUS: pytania <a href="pytania-i-odpowiedzi.html#p-79">79</a>, <a href="pytania-i-odpowiedzi.html#p-80">80</a>, <a href="pytania-i-odpowiedzi.html#p-77">77</a>, <a href="pytania-i-odpowiedzi.html#p-5">5</a> w katalogu pytań i odpowiedzi.</p></article>
+<article class="bl" id="blad-8"><h3><span>8</span>Sprzęt, który nie jest fabrycznie nowy</h3><p><b>Na czym polega błąd.</b> ZUS dofinansowuje wyłącznie sprzęt fabrycznie nowy. Rok produkcji nie może być wcześniejszy niż rok poprzedzający złożenie wniosku. Używany wózek czy maszyna z ekspozycji nie przejdą.</p><p class="jak"><b>Jak go uniknąć.</b> Upewnij się, że oferta wskazuje rok produkcji albo zawiera oświadczenie dostawcy, że urządzenie zostanie wyprodukowane po zamówieniu.</p><p class="bz">Odpowiedzi ZUS: pytania <a href="pytania-i-odpowiedzi.html#p-36">36</a> w katalogu pytań i odpowiedzi.</p></article>
+<article class="bl" id="blad-9"><h3><span>9</span>Zły podpis albo brak liczby kontrolnej</h3><p><b>Na czym polega błąd.</b> Wniosek podpisuje się kwalifikowanym podpisem elektronicznym w formie widocznej w dokumencie. Profil zaufany ani skan z odręcznym podpisem nie wystarczą. Bez prawidłowego podpisu i wypełnienia wszystkich pól nie generuje się liczba kontrolna, a wniosek bez niej nie jest rozpatrywany.</p><p class="jak"><b>Jak go uniknąć.</b> Zadbaj o kwalifikowany podpis z wyprzedzeniem. Jeśli podpisuje pełnomocnik, dołącz pełnomocnictwo z wymaganymi elementami.</p><p class="bz">Odpowiedzi ZUS: pytania <a href="pytania-i-odpowiedzi.html#p-52">52</a>, <a href="pytania-i-odpowiedzi.html#p-54">54</a>, <a href="pytania-i-odpowiedzi.html#p-40">40</a>, <a href="pytania-i-odpowiedzi.html#p-55">55</a> w katalogu pytań i odpowiedzi.</p></article>
+<article class="bl" id="blad-10"><h3><span>10</span>Nieprawidłowy kod PKD lub liczba ubezpieczonych</h3><p><b>Na czym polega błąd.</b> Kod PKD wpływa na punktację, bo wiąże się z kategorią ryzyka. Wybiera się kod działalności objętej projektem, według PKD 2007. Liczbę osób podaje się na dzień złożenia wniosku, po odjęciu m.in. osób na urlopach macierzyńskich i wychowawczych.</p><p class="jak"><b>Jak go uniknąć.</b> Ustal kod PKD dla stanowisk z największą liczbą pracowników objętych projektem i policz ubezpieczonych według zasad z katalogu ZUS.</p><p class="bz">Odpowiedzi ZUS: pytania <a href="pytania-i-odpowiedzi.html#p-41">41</a>, <a href="pytania-i-odpowiedzi.html#p-42">42</a>, <a href="pytania-i-odpowiedzi.html#p-43">43</a> w katalogu pytań i odpowiedzi.</p></article>
+<article class="bl" id="blad-11"><h3><span>11</span>Brak dokumentu do obiektu pod innym adresem</h3><p><b>Na czym polega błąd.</b> Gdy projekt jest realizowany pod innym adresem niż w dokumentach rejestrowych, trzeba wykazać prawo do obiektu. Umowa najmu, dzierżawy lub użyczenia musi obowiązywać co najmniej 5 lat od złożenia wniosku.</p><p class="jak"><b>Jak go uniknąć.</b> Sprawdź okres obowiązywania umowy najmu przed naborem i w razie potrzeby przedłuż ją z właścicielem obiektu.</p><p class="bz">Odpowiedzi ZUS: pytania <a href="pytania-i-odpowiedzi.html#p-12">12</a>, <a href="pytania-i-odpowiedzi.html#p-76">76</a> w katalogu pytań i odpowiedzi.</p></article>
+<article class="bl" id="blad-12"><h3><span>12</span>Koszty, których ZUS nie pokryje</h3><p><b>Na czym polega błąd.</b> Do dofinansowania nie wlicza się m.in. transportu, dostawy, uruchomienia, serwisu ani szkoleń, a zakup w leasingu lub na podobnej umowie jest niekwalifikowalny. Montaż i instalacja mogą być objęte dofinansowaniem.</p><p class="jak"><b>Jak go uniknąć.</b> Rozdziel w ofertach koszty kwalifikowane od pozostałych i zaplanuj zakup za gotówkę lub z kredytu, nie w leasingu.</p><p class="bz">Odpowiedzi ZUS: pytania <a href="pytania-i-odpowiedzi.html#p-57">57</a>, <a href="pytania-i-odpowiedzi.html#p-58">58</a>, <a href="pytania-i-odpowiedzi.html#p-63">63</a>, <a href="pytania-i-odpowiedzi.html#p-67">67</a> w katalogu pytań i odpowiedzi.</p></article>
+</section>
+<p class="zapr-m"><b>Pytanie o Twój projekt?</b> Zadzwoń: <a href="tel:+48697333390">697 333 390</a> albo napisz przez <a href="#zapytanie">formularz</a>.</p>
+<section class="bg" id="etap-3"><h2>Po złożeniu wniosku i w realizacji</h2><p class="bg-w">Wniosek na liście rankingowej to dopiero połowa drogi. Błędy na etapie umowy i rozliczenia mogą kosztować część dofinansowania.</p>
+<article class="bl" id="blad-13"><h3><span>13</span>Przeoczone wezwanie z ZUS</h3><p><b>Na czym polega błąd.</b> ZUS wysyła korespondencję na adres e-mail z wniosku i informuje telefonicznie. Braki formalne można usunąć tylko raz, w wyznaczonym zakresie. Wezwanie, które utknęło w folderze SPAM, oznacza zwykle koniec wniosku.</p><p class="jak"><b>Jak go uniknąć.</b> Wskaż we wniosku skrzynkę, którą ktoś sprawdza codziennie, i zgłaszaj ZUS każdą zmianę adresu lub osoby do kontaktu.</p><p class="bz">Odpowiedzi ZUS: pytania <a href="pytania-i-odpowiedzi.html#p-9">9</a>, <a href="pytania-i-odpowiedzi.html#p-15">15</a> w katalogu pytań i odpowiedzi.</p></article>
+<article class="bl" id="blad-14"><h3><span>14</span>Zakup przed podpisaniem umowy</h3><p><b>Na czym polega błąd.</b> Faktura z datą sprzedaży wcześniejszą niż zawarcie umowy z ZUS albo 1 stycznia roku realizacji oznacza wydatek niekwalifikowalny.</p><p class="jak"><b>Jak go uniknąć.</b> Wstrzymaj zamówienia do podpisania umowy, nawet jeśli dostawca naciska na szybką decyzję.</p><p class="bz">Odpowiedzi ZUS: pytania <a href="pytania-i-odpowiedzi.html#p-102">102</a> w katalogu pytań i odpowiedzi.</p></article>
+<article class="bl" id="blad-15"><h3><span>15</span>Zmiany w projekcie bez zgody ZUS</h3><p><b>Na czym polega błąd.</b> Kwota dofinansowania nie rośnie, nawet gdy sprzęt podrożeje, a środków nie można przesuwać między działaniami. Zmiana dostawcy lub urządzenia jest możliwa tylko za wcześniejszą zgodą ZUS i bez szkody dla projektu.</p><p class="jak"><b>Jak go uniknąć.</b> Uwzględnij ryzyko wzrostu cen we własnym budżecie, a każdą zmianę zgłaszaj do ZUS przed zakupem.</p><p class="bz">Odpowiedzi ZUS: pytania <a href="pytania-i-odpowiedzi.html#p-108">108</a>, <a href="pytania-i-odpowiedzi.html#p-109">109</a> w katalogu pytań i odpowiedzi.</p></article>
+<article class="bl" id="blad-16"><h3><span>16</span>Inna metoda oceny w rozliczeniu niż we wniosku</h3><p><b>Na czym polega błąd.</b> Ponowna ocena ryzyka i ocena obciążenia w sprawozdaniu końcowym muszą być wykonane tą samą metodą co oceny dołączone do wniosku. Inaczej nie da się wykazać, że inwestycja poprawiła wskaźniki.</p><p class="jak"><b>Jak go uniknąć.</b> Zachowaj metodę i zakres ocen z wniosku, najlepiej powierzając obie oceny temu samemu zespołowi.</p><p class="bz">Odpowiedzi ZUS: pytania <a href="pytania-i-odpowiedzi.html#p-99">99</a> w katalogu pytań i odpowiedzi.</p></article>
+<article class="bl" id="blad-17"><h3><span>17</span>Złamanie okresu trwałości</h3><p><b>Na czym polega błąd.</b> Przez 3 lata od odbioru projektu trzeba utrzymać stanowiska, sprzęt i status płatnika składek. Zawieszenie działalności przerywa trwałość i może skończyć się wypowiedzeniem umowy.</p><p class="jak"><b>Jak go uniknąć.</b> Planuj zmiany w firmie z uwzględnieniem trwałości projektu, a w razie wątpliwości pytaj przed decyzją.</p><p class="bz">Odpowiedzi ZUS: pytania <a href="pytania-i-odpowiedzi.html#p-106">106</a>, <a href="pytania-i-odpowiedzi.html#p-26">26</a> w katalogu pytań i odpowiedzi.</p></article>
+</section>
+  <section class="lista-k">
+   <h2>Krótka lista kontrolna przed naborem</h2>
+   <ul>
+    <li>działanie jest w Katalogu działań, a kwota mieści się w limicie,</li>
+    <li>ocena ryzyka zawodowego obejmuje każde stanowisko z projektu,</li>
+    <li>pomiary są aktualne i wykonane przez uprawnione laboratorium,</li>
+    <li>oferty są imienne, na nowy sprzęt, z ceną brutto w złotych i zgodne z wnioskiem,</li>
+    <li>brak zaległości w ZUS i urzędzie skarbowym, zaświadczenie jest aktualne,</li>
+    <li>kwalifikowany podpis elektroniczny jest gotowy, a skrzynka e-mail z wniosku sprawdzana codziennie.</li>
+   </ul>
+  </section>
+  <aside class="zapr" aria-labelledby="zapytanie-t">
+ <div>
+  <h2 id="zapytanie-t">Przygotujemy wniosek bez tych błędów</h2>
+  <p class="op">Zadzwoń albo zostaw kontakt, oddzwonimy. Sprawdzimy, czy planowane zakupy mieszczą się w katalogu działań ZUS, i powiemy, jakich pomiarów i dokumentów będzie potrzeba.</p>
+  <a class="tz" href="tel:+48697333390">+48 697 333 390<small>pon.-pt. 8:00-16:00, dotacje@energiabhp.pl</small></a>
+ </div>
+ <form class="form" id="zapytanie" novalidate>
+  <div class="pola">
+   <div><label for="zapytanie-imie">Imię i nazwisko</label><input id="zapytanie-imie" name="imie" autocomplete="name"></div>
+   <div><label for="zapytanie-tel">Telefon lub e-mail</label><input id="zapytanie-tel" name="kontakt" autocomplete="tel"></div>
+   <div class="cale"><label for="zapytanie-wiad">Czego dotyczy pytanie?</label><textarea id="zapytanie-wiad" name="wiadomosc" placeholder="Np. wentylacja hali, wózek widłowy, termin naboru"></textarea></div>
+   <label class="zgoda cale"><input type="checkbox" name="zgoda"> Wyrażam zgodę na kontakt w sprawie zapytania.</label>
+  </div>
+  <button class="btn btn-z" type="submit">Wyślij pytanie</button>
+  <p class="info">Formularz pokazowy, na podglądzie nie wysyła wiadomości.</p>
+ </form>
+</aside>
+ </div>
+</div>
+</main>
+<footer class="stopka">
+ <div class="wr">
+  <div class="gora">
+   <div>
+    <a class="logo" href="./" aria-label="Energia BHP - strona główna"><svg viewBox="9 31 205 46" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Energia BHP"><g fill="#1e8b57"><g transform="translate(11.63, 66.74)"><g><path d="M 13.84 -21.46 L 13.84 -17.18 L 6.45 -17.18 L 6.45 -12.90 L 13.53 -12.90 L 13.53 -8.60 L 6.45 -8.60 L 6.45 -4.29 L 13.84 -4.29 L 13.84 0 L 1.56 0 L 1.56 -21.46 Z M 13.84 -21.46 "/></g></g></g><g fill="#1e8b57"><g transform="translate(29.33, 66.74)"><g><path d="M 6.45 -13.32 L 6.45 0 L 1.56 0 L 1.56 -21.46 L 6.45 -21.46 L 15 -8.14 L 15.04 -8.14 L 15.04 -21.46 L 19.93 -21.46 L 19.93 0 L 15.04 0 L 6.51 -13.32 Z M 6.45 -13.32 "/></g></g></g><g fill="#1e8b57"><g transform="translate(53.43, 66.74)"><g><path d="M 13.84 -21.46 L 13.84 -17.18 L 6.45 -17.18 L 6.45 -12.90 L 13.53 -12.90 L 13.53 -8.60 L 6.45 -8.60 L 6.45 -4.29 L 13.84 -4.29 L 13.84 0 L 1.56 0 L 1.56 -21.46 Z M 13.84 -21.46 "/></g></g></g><g fill="#1e8b57"><g transform="translate(71.13, 66.74)"><g><path d="M 1.56 -21.46 L 9.23 -21.46 C 11.30 -21.46 12.99 -20.91 14.29 -19.81 C 15.59 -18.71 16.25 -17.14 16.25 -15.09 C 16.25 -13.51 15.85 -12.19 15.06 -11.12 C 14.26 -10.06 13.19 -9.31 11.84 -8.87 L 19.23 0 L 13.01 0 L 6.45 -8.48 L 6.45 0 L 1.56 0 Z M 6.45 -11.95 L 7.03 -11.95 C 7.47 -11.95 7.85 -11.95 8.17 -11.96 C 8.48 -11.98 8.83 -12.05 9.23 -12.15 C 9.64 -12.25 9.96 -12.40 10.20 -12.59 C 10.44 -12.78 10.64 -13.07 10.82 -13.43 C 11.00 -13.80 11.09 -14.24 11.09 -14.76 C 11.09 -15.28 11.00 -15.72 10.82 -16.09 C 10.64 -16.45 10.44 -16.73 10.20 -16.92 C 9.96 -17.10 9.64 -17.25 9.23 -17.35 C 8.83 -17.46 8.48 -17.52 8.17 -17.54 C 7.85 -17.56 7.47 -17.57 7.03 -17.57 L 6.45 -17.57 Z M 6.45 -11.95 "/></g></g></g><g fill="#1e8b57"><g transform="translate(92.36, 66.74)"><g><path d="M 20.98 -12.03 L 20.98 -7.35 C 20.42 -4.81 19.20 -2.89 17.32 -1.57 C 15.46 -0.26 13.37 0.39 11.06 0.39 C 8.16 0.39 5.69 -0.69 3.65 -2.85 C 1.61 -5.03 0.59 -7.65 0.59 -10.71 C 0.59 -13.84 1.58 -16.47 3.57 -18.62 C 5.57 -20.78 8.07 -21.85 11.06 -21.85 C 14.55 -21.85 17.31 -20.64 19.34 -18.20 L 16.14 -14.68 C 14.99 -16.51 13.39 -17.43 11.34 -17.43 C 9.83 -17.43 8.54 -16.78 7.48 -15.46 C 6.42 -14.16 5.89 -12.58 5.89 -10.71 C 5.89 -8.89 6.42 -7.33 7.48 -6.04 C 8.54 -4.75 9.83 -4.10 11.34 -4.10 C 12.59 -4.10 13.67 -4.48 14.60 -5.23 C 15.54 -5.99 16.01 -7 16.01 -8.25 L 11.06 -8.25 L 11.06 -12.03 Z M 20.98 -12.03 "/></g></g></g><g fill="#1e8b57"><g transform="translate(116.54, 66.74)"><g><path d="M 6.45 -21.46 L 6.45 0 L 1.56 0 L 1.56 -21.46 Z M 6.45 -21.46 "/></g></g></g><g fill="#1e8b57"><g transform="translate(127.16, 66.74)"><g><path d="M 12.46 -21.46 L 21.14 0 L 15.87 0 L 14.29 -4.29 L 6.12 -4.29 L 4.53 0 L -0.73 0 L 7.93 -21.46 Z M 12.62 -8.59 L 10.23 -14.84 L 10.17 -14.84 L 7.78 -8.59 Z M 12.62 -8.59 "/></g></g></g><g fill="currentColor"><g transform="translate(157.38, 62.08)" fill="currentColor"><g fill="currentColor"><path d="M 1.48 0 L 1.48 -16.59 L 7.29 -16.59 C 9.30 -16.59 10.83 -16.20 11.87 -15.43 C 12.91 -14.66 13.43 -13.53 13.43 -12.04 C 13.43 -11.23 13.22 -10.51 12.81 -9.89 C 12.39 -9.27 11.81 -8.82 11.06 -8.53 C 11.91 -8.32 12.58 -7.89 13.07 -7.25 C 13.56 -6.60 13.81 -5.81 13.81 -4.87 C 13.81 -3.28 13.30 -2.07 12.28 -1.25 C 11.26 -0.42 9.82 -0.00 7.93 0 Z M 4.90 -7.21 L 4.90 -2.75 L 7.82 -2.75 C 8.62 -2.75 9.25 -2.93 9.70 -3.31 C 10.16 -3.69 10.39 -4.22 10.39 -4.90 C 10.39 -6.42 9.60 -7.19 8.03 -7.21 Z M 4.90 -9.64 L 7.43 -9.64 C 9.15 -9.67 10.01 -10.35 10.01 -11.70 C 10.01 -12.45 9.79 -12.99 9.35 -13.32 C 8.92 -13.66 8.23 -13.82 7.29 -13.82 L 4.90 -13.82 Z M 4.90 -9.64 " fill="currentColor"/></g></g></g><g fill="currentColor"><g transform="translate(174.61, 62.08)" fill="currentColor"><g fill="currentColor"><path d="M 14.98 0 L 11.56 0 L 11.56 -7.10 L 4.90 -7.10 L 4.90 0 L 1.48 0 L 1.48 -16.59 L 4.90 -16.59 L 4.90 -9.87 L 11.56 -9.87 L 11.56 -16.59 L 14.98 -16.59 Z M 14.98 0 " fill="currentColor"/></g></g></g><g fill="currentColor"><g transform="translate(193.44, 62.08)" fill="currentColor"><g fill="currentColor"><path d="M 4.90 -5.84 L 4.90 0 L 1.48 0 L 1.48 -16.59 L 7.95 -16.59 C 9.20 -16.59 10.29 -16.36 11.23 -15.90 C 12.17 -15.45 12.91 -14.81 13.42 -13.96 C 13.92 -13.12 14.18 -12.17 14.18 -11.10 C 14.18 -9.47 13.62 -8.18 12.51 -7.25 C 11.39 -6.31 9.86 -5.84 7.90 -5.84 Z M 4.90 -8.60 L 7.95 -8.60 C 8.85 -8.60 9.54 -8.82 10.01 -9.25 C 10.49 -9.67 10.73 -10.28 10.73 -11.07 C 10.73 -11.89 10.49 -12.54 10.01 -13.04 C 9.53 -13.54 8.87 -13.80 8.03 -13.82 L 4.90 -13.82 Z M 4.90 -8.60 " fill="currentColor"/></g></g></g><path stroke-linecap="butt" transform="matrix(0.74, 0, 0, 0.74, 152.91, 34.02)" fill="none" stroke-linejoin="miter" d="M 0.00 1.49 L 80.79 1.49 " stroke="#1e8b57" stroke-width="3"/><path stroke-linecap="butt" transform="matrix(0.74, 0, 0, 0.74, 152.91, 73.06)" fill="none" stroke-linejoin="miter" d="M 0.00 1.49 L 80.79 1.49 " stroke="#1e8b57" stroke-width="3"/><path stroke-linecap="butt" transform="matrix(0, -0.74, 0.74, 0, 210.99, 74.18)" fill="none" stroke-linejoin="miter" d="M 0.00 1.49 L 52.30 1.49 " stroke="#1e8b57" stroke-width="3"/><path stroke-linecap="butt" transform="matrix(0, -0.74, 0.74, 0, 152.91, 75.30)" fill="none" stroke-linejoin="miter" d="M -0.00 1.50 L 12.18 1.50 " stroke="#1e8b57" stroke-width="3"/><path stroke-linecap="butt" transform="matrix(0, -0.74, 0.74, 0, 152.91, 44.16)" fill="none" stroke-linejoin="miter" d="M 0.00 1.50 L 12.18 1.50 " stroke="#1e8b57" stroke-width="3"/></svg></a>
+    <p style="margin-top:16px;max-width:30em">Pomoc w uzyskaniu i rozliczeniu dotacji z ZUS na BHP.</p>
+   </div>
+   <div>
+    <h3>Kontakt</h3>
+    <ul><li><a href="tel:+48697333390">+48 697 333 390</a></li><li><a href="mailto:dotacje@energiabhp.pl">dotacje@energiabhp.pl</a></li><li>ul. Kościuszki 10a, 77-100 Bytów</li><li><a href="https://energiabhp.pl/" rel="noopener">www.energiabhp.pl</a></li><li><a href="https://www.facebook.com/profile.php?id=61555799191875" rel="noopener">Facebook</a></li></ul>
+   </div>
+   <div>
+    <h3>Na stronie</h3>
+    <ul><li><a href="./#nabor">Nabór 2027</a></li><li><a href="./#na-co">Na co dotacja</a></li><li><a href="./#warunki">Warunki</a></li><li><a href="./#jak">Jak uzyskać</a></li><li><a href="./#odplatnosc">Odpłatność</a></li><li><a href="pytania-i-odpowiedzi.html">Pytania i odpowiedzi</a></li><li><a href="najczestsze-bledy-we-wnioskach.html">Najczęstsze błędy we wnioskach</a></li></ul>
+   </div>
+  </div>
+  <div class="dol">
+   <span>© <span id="rok">2026</span> Energia BHP Usługi Doradcze i Szkoleniowe Leszek Szymczak</span>
+   <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=dotacjezzusu.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+  </div>
+ </div>
+</footer>
+<script>
+(function(){
+var b=document.querySelector('.mbtn'),m=document.getElementById('menu');
+b.addEventListener('click',function(){var o=m.classList.toggle('otw');b.setAttribute('aria-expanded',o)});
+m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('otw');b.setAttribute('aria-expanded','false')}});
+document.getElementById('rok').textContent=new Date().getFullYear();
+[].forEach.call(document.querySelectorAll('form.form:not(#formularz)'),function(f){f.addEventListener('submit',function(e){e.preventDefault();var i=f.querySelector('.info');if(i){i.textContent='To formularz pokazowy. Na docelowej stronie zapytanie trafi na adres dotacje@energiabhp.pl.';i.style.color='#00843D'}})});
+})();
+</script>
+</body>
+</html>
